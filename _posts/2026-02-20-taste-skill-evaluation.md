@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "taste-skill: Wenn Aesthetik-Praeferenzen als Design-Methodik verkleidet werden"
-date: 2026-04-09
+date: 2026-02-20
 category: Skill-Evaluation
 skill_reviewed: "Leonxlnx/taste-skill"
 verdict: vorsicht
 reading_time: 8
-last_audited: "9. April 2026"
+last_audited: "20. Februar 2026"
 
 skill_scores:
   methodische_fundierung: 2

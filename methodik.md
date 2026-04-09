@@ -7,14 +7,14 @@ permalink: /methodik/
 <div class="post-header">
   <div class="container">
     <span class="post-category">Methodik</span>
-    <h1 class="post-title">Wie wir Skills bewerten</h1>
+    <h1 class="post-title">Wie werden Skills bewertet</h1>
     <p style="color: var(--color-text-muted); font-family: var(--font-ui); max-width: 55ch;">
       Ein Skill der gut klingt, ist kein Skill der gut funktioniert. Dieser Rahmen macht die Unterschiede sichtbar.
     </p>
   </div>
 </div>
 
-<div class="post-content container">
+<div class="post-content container" markdown="1">
 
 Das Skill-Oekosystem fuer Claude wächst schneller als es evaluiert wird. Stars auf GitHub, viral gegangene Tweets und schön formatierte READMEs sagen nichts über die methodische Qualitaet eines Skills aus. Dieser Blog benutzt deshalb vier Dimensionen zur Bewertung.
 

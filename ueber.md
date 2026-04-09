@@ -11,7 +11,7 @@ permalink: /ueber/
   </div>
 </div>
 
-<div class="post-content container">
+<div class="post-content container" markdown="1">
 
 Das Skill-Oekosystem fuer Claude waechst schnell. Es entstehen Skills fuer Heuristic Evaluation, Cognitive Walkthroughs, A/B-Test-Analysen und Accessibility-Audits — viele davon von Einzelpersonen, ohne Peer-Review, ohne Testfaelle, ohne klare Aussage ueber Grenzen.
 

@@ -1,0 +1,68 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <div class="container">
+
+      {% if page.category %}
+      <span class="post-category">{{ page.category }}</span>
+      {% endif %}
+
+      <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+
+      <div class="post-meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {{ page.date | date: "%-d. %B %Y" }}
+        </time>
+        {% if page.skill_reviewed %}
+        <span class="post-meta-sep">&middot;</span>
+        <span>Skill: <code>{{ page.skill_reviewed }}</code></span>
+        {% endif %}
+        {% if page.reading_time %}
+        <span class="post-meta-sep">&middot;</span>
+        <span>{{ page.reading_time }} Min. Lesezeit</span>
+        {% endif %}
+      </div>
+
+      {% if page.verdict %}
+      <div class="verdict verdict--{{ page.verdict | downcase }}">
+        <span class="verdict-label">Urteil</span>
+        <span class="verdict-value">
+          {% case page.verdict %}
+            {% when 'vertrauen' %}Vertrauen mit Vorbehalt
+            {% when 'vorsicht' %}Vorsicht
+            {% when 'ablehnen' %}Nicht empfohlen
+            {% when 'solide' %}Solide Grundlage
+            {% else %}{{ page.verdict }}
+          {% endcase %}
+        </span>
+      </div>
+      {% endif %}
+
+    </div>
+  </header>
+
+  {% if page.skill_scores %}
+  <div class="scorecard-wrapper">
+    <div class="container">
+      {% include skill-scorecard.html %}
+    </div>
+  </div>
+  {% endif %}
+
+  <div class="post-content container" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  {% if page.tags.size > 0 %}
+  <footer class="post-footer container">
+    <div class="post-tags">
+      {% for tag in page.tags %}
+      <span class="tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+  </footer>
+  {% endif %}
+
+</article>

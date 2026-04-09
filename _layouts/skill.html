@@ -1,0 +1,46 @@
+---
+layout: default
+---
+<article class="skill-page">
+  <header class="post-header">
+    <div class="container">
+      <span class="post-category">Skill-Referenz</span>
+      <h1 class="post-title">{{ page.title }}</h1>
+      <div class="post-meta">
+        {% if page.skill_repo %}
+        <a href="{{ page.skill_repo }}" rel="noopener">Repo ansehen</a>
+        <span class="post-meta-sep">&middot;</span>
+        {% endif %}
+        {% if page.last_audited %}
+        Geprueft: {{ page.last_audited }}
+        {% endif %}
+      </div>
+      {% if page.verdict %}
+      <div class="verdict verdict--{{ page.verdict | downcase }}">
+        <span class="verdict-label">Urteil</span>
+        <span class="verdict-value">
+          {% case page.verdict %}
+            {% when 'vertrauen' %}Vertrauen mit Vorbehalt
+            {% when 'vorsicht' %}Vorsicht
+            {% when 'ablehnen' %}Nicht empfohlen
+            {% when 'solide' %}Solide Grundlage
+            {% else %}{{ page.verdict }}
+          {% endcase %}
+        </span>
+      </div>
+      {% endif %}
+    </div>
+  </header>
+
+  {% if page.skill_scores %}
+  <div class="scorecard-wrapper">
+    <div class="container">
+      {% include skill-scorecard.html %}
+    </div>
+  </div>
+  {% endif %}
+
+  <div class="post-content container">
+    {{ content }}
+  </div>
+</article>

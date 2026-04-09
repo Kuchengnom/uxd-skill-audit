@@ -1,0 +1,78 @@
+<!--
+  Skill Scorecard Include
+  Erwartet page.skill_scores als Frontmatter-Objekt:
+
+  skill_scores:
+    methodische_fundierung: 3        # 1-5
+    methodische_fundierung_note: "Nielsen korrekt portiert, aber..."
+    transparenz: 2
+    transparenz_note: "Keine Limitierungen kommuniziert"
+    validierbarkeit: 1
+    validierbarkeit_note: "Keine Testfaelle vorhanden"
+    wartbarkeit: 4
+    wartbarkeit_note: "Aktiv gepflegt, MIT-Lizenz"
+-->
+
+{% assign scores = page.skill_scores %}
+
+<div class="scorecard" role="region" aria-label="Skill-Bewertung">
+
+  {% if scores.methodische_fundierung %}
+  <div class="score-item">
+    <div class="score-item__label">Methodische Fundierung</div>
+    <div class="score-item__value">{{ scores.methodische_fundierung }}<span style="font-size:1rem;font-weight:400;color:var(--color-text-muted)">/5</span></div>
+    <div class="score-item__bar" role="progressbar" aria-valuenow="{{ scores.methodische_fundierung }}" aria-valuemin="1" aria-valuemax="5">
+      <div class="score-item__bar-fill" style="width: {{ scores.methodische_fundierung | times: 20 }}%"></div>
+    </div>
+    {% if scores.methodische_fundierung_note %}
+    <div class="score-item__note">{{ scores.methodische_fundierung_note }}</div>
+    {% endif %}
+  </div>
+  {% endif %}
+
+  {% if scores.transparenz %}
+  <div class="score-item">
+    <div class="score-item__label">Transparenz der Grenzen</div>
+    <div class="score-item__value">{{ scores.transparenz }}<span style="font-size:1rem;font-weight:400;color:var(--color-text-muted)">/5</span></div>
+    <div class="score-item__bar" role="progressbar" aria-valuenow="{{ scores.transparenz }}" aria-valuemin="1" aria-valuemax="5">
+      <div class="score-item__bar-fill" style="width: {{ scores.transparenz | times: 20 }}%"></div>
+    </div>
+    {% if scores.transparenz_note %}
+    <div class="score-item__note">{{ scores.transparenz_note }}</div>
+    {% endif %}
+  </div>
+  {% endif %}
+
+  {% if scores.validierbarkeit %}
+  <div class="score-item">
+    <div class="score-item__label">Validierbarkeit</div>
+    <div class="score-item__value">{{ scores.validierbarkeit }}<span style="font-size:1rem;font-weight:400;color:var(--color-text-muted)">/5</span></div>
+    <div class="score-item__bar" role="progressbar" aria-valuenow="{{ scores.validierbarkeit }}" aria-valuemin="1" aria-valuemax="5">
+      <div class="score-item__bar-fill" style="width: {{ scores.validierbarkeit | times: 20 }}%"></div>
+    </div>
+    {% if scores.validierbarkeit_note %}
+    <div class="score-item__note">{{ scores.validierbarkeit_note }}</div>
+    {% endif %}
+  </div>
+  {% endif %}
+
+  {% if scores.wartbarkeit %}
+  <div class="score-item">
+    <div class="score-item__label">Wartbarkeit</div>
+    <div class="score-item__value">{{ scores.wartbarkeit }}<span style="font-size:1rem;font-weight:400;color:var(--color-text-muted)">/5</span></div>
+    <div class="score-item__bar" role="progressbar" aria-valuenow="{{ scores.wartbarkeit }}" aria-valuemin="1" aria-valuemax="5">
+      <div class="score-item__bar-fill" style="width: {{ scores.wartbarkeit | times: 20 }}%"></div>
+    </div>
+    {% if scores.wartbarkeit_note %}
+    <div class="score-item__note">{{ scores.wartbarkeit_note }}</div>
+    {% endif %}
+  </div>
+  {% endif %}
+
+</div>
+
+<p class="scorecard-caption">
+  Bewertet nach dem <a href="{{ '/methodik/' | relative_url }}">4-Dimensionen-Rahmen</a>.
+  Jede Dimension: 1 (ungenuegend) bis 5 (vorbildlich).
+  Geprueft am: {{ page.last_audited | default: page.date | date: "%-d. %B %Y" }}.
+</p>

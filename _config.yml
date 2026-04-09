@@ -1,0 +1,54 @@
+title: "UX Skills Review"
+description: "Design-Methodik, Claude-Skills und die kritische Frage: Kann man diesem Skill vertrauen?"
+author: Sebastian
+email: kuchengnom@gmail.com
+github_username: Kuchengnom
+lang: de
+
+# GitHub Pages: Wenn das Repo dein-name.github.io heisst, bleibt baseurl leer.
+# Wenn das Repo einen anderen Namen hat (z.B. "ux-skills-blog"), schreib:
+# baseurl: "/ux-skills-blog"
+baseurl: "/uxd-skill-audit"
+url: "https://kuchengnom.github.io"
+
+# Build
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+# Collections
+collections:
+  skills:
+    output: true
+    permalink: /skills/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "skills"
+    values:
+      layout: "skill"
+
+# Exclude from build
+exclude:
+  - preliminary-reserarch.md
+  - "*.sh"
+  - vendor/
+  - node_modules/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag

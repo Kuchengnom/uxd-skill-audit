@@ -464,6 +464,107 @@ hr {
   border-radius: var(--radius);
 }
 
+/* --- Radar Chart ---------------------------------------------- */
+.radar-chart {
+  display: block;
+  overflow: visible;
+}
+
+.radar-chart--full {
+  width: 100%;
+  max-width: 260px;
+}
+
+.radar-chart--mini {
+  width: 100%;
+  max-width: 140px;
+}
+
+.radar-grid {
+  fill: none;
+  stroke: var(--color-border);
+  stroke-width: 1;
+}
+
+.radar-grid--outer {
+  stroke: var(--color-text-muted);
+  stroke-width: 1.5;
+}
+
+.radar-axis {
+  stroke: var(--color-border);
+  stroke-width: 1;
+}
+
+.radar-data {
+  fill: var(--color-accent);
+  fill-opacity: 0.18;
+  stroke: var(--color-accent);
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+
+.radar-dot {
+  fill: var(--color-accent);
+  stroke: white;
+  stroke-width: 1.5;
+}
+
+.radar-label {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  fill: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.radar-label--top    { text-anchor: middle; dominant-baseline: auto; }
+.radar-label--right  { text-anchor: start;  dominant-baseline: middle; }
+.radar-label--bottom { text-anchor: middle; dominant-baseline: hanging; }
+.radar-label--left   { text-anchor: end;    dominant-baseline: middle; }
+
+.radar-value {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 700;
+  fill: var(--color-accent);
+  dominant-baseline: middle;
+}
+
+/* Scorecard-Layout: Radar + Balken nebeneinander */
+.scorecard-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: var(--space-xl);
+  align-items: center;
+}
+
+.scorecard-radar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 640px) {
+  .scorecard-layout {
+    grid-template-columns: 1fr;
+  }
+  .scorecard-radar {
+    justify-content: flex-start;
+  }
+  .radar-chart--full {
+    max-width: 200px;
+  }
+}
+
+/* Radar in Skill-Cards */
+.skill-card__radar {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-m) 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
 /* --- Skills Index --------------------------------------------- */
 .verdict-group {
   margin-bottom: var(--space-2xl);

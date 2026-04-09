@@ -54,41 +54,8 @@ permalink: /skills/
               </header>
 
               {% if post.skill_scores %}
-              {% assign s = post.skill_scores %}
-              <div class="skill-card__scores">
-
-                <div class="mini-score">
-                  <span class="mini-score__label">Methodik</span>
-                  <div class="mini-score__bar">
-                    <div class="mini-score__fill" style="width: {{ s.methodische_fundierung | times: 20 }}%"></div>
-                  </div>
-                  <span class="mini-score__value">{{ s.methodische_fundierung }}/5</span>
-                </div>
-
-                <div class="mini-score">
-                  <span class="mini-score__label">Transparenz</span>
-                  <div class="mini-score__bar">
-                    <div class="mini-score__fill" style="width: {{ s.transparenz | times: 20 }}%"></div>
-                  </div>
-                  <span class="mini-score__value">{{ s.transparenz }}/5</span>
-                </div>
-
-                <div class="mini-score">
-                  <span class="mini-score__label">Validierbarkeit</span>
-                  <div class="mini-score__bar">
-                    <div class="mini-score__fill" style="width: {{ s.validierbarkeit | times: 20 }}%"></div>
-                  </div>
-                  <span class="mini-score__value">{{ s.validierbarkeit }}/5</span>
-                </div>
-
-                <div class="mini-score">
-                  <span class="mini-score__label">Wartbarkeit</span>
-                  <div class="mini-score__bar">
-                    <div class="mini-score__fill" style="width: {{ s.wartbarkeit | times: 20 }}%"></div>
-                  </div>
-                  <span class="mini-score__value">{{ s.wartbarkeit }}/5</span>
-                </div>
-
+              <div class="skill-card__radar">
+                {% include skill-radar.html scores=post.skill_scores size="mini" %}
               </div>
               {% endif %}
 

@@ -1,0 +1,109 @@
+<!--
+  Skill Radar Chart — reines Liquid/SVG, kein JavaScript
+  Viewbox: 240x240, Zentrum: (120,120), Max-Radius: 88px
+
+  Achsen (Rauten-Layout):
+    Oben    (270°): Methodische Fundierung  → y = 120 - r
+    Rechts  (0°):   Transparenz             → x = 120 + r
+    Unten   (90°):  Validierbarkeit         → y = 120 + r
+    Links   (180°): Wartbarkeit             → x = 120 - r
+
+  Skalierung: r = score * (88/5) = score * 17.6 ≈ score * 18 (gerundet für Liquid)
+
+  Parameter:
+    include.scores  = page.skill_scores Objekt
+    include.size    = "full" (default) oder "mini" (kompaktere Darstellung)
+-->
+
+{% assign s = include.scores | default: page.skill_scores %}
+{% assign is_mini = false %}
+{% if include.size == "mini" %}{% assign is_mini = true %}{% endif %}
+
+{% if s %}
+
+{% comment %} Skalierung: 1→18, 2→35, 3→53, 4→70, 5→88 {% endcomment %}
+{% assign scale = 17.6 %}
+
+{% assign m_raw = s.methodische_fundierung | default: 0 %}
+{% assign t_raw = s.transparenz            | default: 0 %}
+{% assign v_raw = s.validierbarkeit        | default: 0 %}
+{% assign w_raw = s.wartbarkeit            | default: 0 %}
+
+{% assign m_r = m_raw | times: 176 | divided_by: 100 %}
+{% assign t_r = t_raw | times: 176 | divided_by: 100 %}
+{% assign v_r = v_raw | times: 176 | divided_by: 100 %}
+{% assign w_r = w_raw | times: 176 | divided_by: 100 %}
+
+{% comment %} Polygon-Punkte: Oben, Rechts, Unten, Links {% endcomment %}
+{% assign p_top_y    = 120 | minus: m_r %}
+{% assign p_right_x  = 120 | plus:  t_r %}
+{% assign p_bottom_y = 120 | plus:  v_r %}
+{% assign p_left_x   = 120 | minus: w_r %}
+
+{% comment %} Gitter-Rauten bei Score 1–5 {% endcomment %}
+{% assign g1 = 18  %}{% comment %} 1 × 17.6 ≈ 18 {% endcomment %}
+{% assign g2 = 35  %}{% comment %} 2 × 17.6 ≈ 35 {% endcomment %}
+{% assign g3 = 53  %}{% comment %} 3 × 17.6 ≈ 53 {% endcomment %}
+{% assign g4 = 70  %}{% comment %} 4 × 17.6 ≈ 70 {% endcomment %}
+{% assign g5 = 88  %}{% comment %} 5 × 17.6 ≈ 88 {% endcomment %}
+
+{% if is_mini %}
+<svg class="radar-chart radar-chart--mini"
+     viewBox="0 0 240 240"
+     aria-label="Radar-Diagramm: Methodische Fundierung {{ m_raw }}/5, Transparenz {{ t_raw }}/5, Validierbarkeit {{ v_raw }}/5, Wartbarkeit {{ w_raw }}/5"
+     role="img">
+{% else %}
+<svg class="radar-chart radar-chart--full"
+     viewBox="0 0 240 240"
+     aria-label="Radar-Diagramm: Methodische Fundierung {{ m_raw }}/5, Transparenz {{ t_raw }}/5, Validierbarkeit {{ v_raw }}/5, Wartbarkeit {{ w_raw }}/5"
+     role="img">
+{% endif %}
+
+  <!-- Hintergrund-Gitter: 5 konzentrische Rauten -->
+  {% for level in (1..5) %}
+    {% assign gr = g1 %}
+    {% if level == 2 %}{% assign gr = g2 %}{% endif %}
+    {% if level == 3 %}{% assign gr = g3 %}{% endif %}
+    {% if level == 4 %}{% assign gr = g4 %}{% endif %}
+    {% if level == 5 %}{% assign gr = g5 %}{% endif %}
+    {% assign gy_top    = 120 | minus: gr %}
+    {% assign gx_right  = 120 | plus:  gr %}
+    {% assign gy_bottom = 120 | plus:  gr %}
+    {% assign gx_left   = 120 | minus: gr %}
+    <polygon
+      points="120,{{ gy_top }} {{ gx_right }},120 120,{{ gy_bottom }} {{ gx_left }},120"
+      class="radar-grid{% if level == 5 %} radar-grid--outer{% endif %}" />
+  {% endfor %}
+
+  <!-- Achslinien -->
+  <line x1="120" y1="{{ 120 | minus: g5 }}" x2="120" y2="{{ 120 | plus: g5 }}"  class="radar-axis" />
+  <line x1="{{ 120 | minus: g5 }}" y1="120" x2="{{ 120 | plus: g5 }}" y2="120"  class="radar-axis" />
+
+  <!-- Datenfläche -->
+  <polygon
+    points="120,{{ p_top_y }} {{ p_right_x }},120 120,{{ p_bottom_y }} {{ p_left_x }},120"
+    class="radar-data" />
+
+  <!-- Datenpunkte -->
+  <circle cx="120"          cy="{{ p_top_y }}"    r="4" class="radar-dot" />
+  <circle cx="{{ p_right_x }}"  cy="120"          r="4" class="radar-dot" />
+  <circle cx="120"          cy="{{ p_bottom_y }}" r="4" class="radar-dot" />
+  <circle cx="{{ p_left_x }}"   cy="120"          r="4" class="radar-dot" />
+
+  {% unless is_mini %}
+  <!-- Achsbeschriftungen -->
+  <text x="120" y="20"  class="radar-label radar-label--top">Methodik</text>
+  <text x="238" y="124" class="radar-label radar-label--right">Transparenz</text>
+  <text x="120" y="228" class="radar-label radar-label--bottom">Validierbarkeit</text>
+  <text x="2"   y="124" class="radar-label radar-label--left">Wartbarkeit</text>
+
+  <!-- Score-Werte an den Datenpunkten -->
+  {% if m_raw > 0 %}<text x="120" y="{{ p_top_y | minus: 8 }}"    class="radar-value" text-anchor="middle">{{ m_raw }}</text>{% endif %}
+  {% if t_raw > 0 %}<text x="{{ p_right_x | plus: 10 }}" y="124"  class="radar-value" text-anchor="start">{{ t_raw }}</text>{% endif %}
+  {% if v_raw > 0 %}<text x="120" y="{{ p_bottom_y | plus: 16 }}" class="radar-value" text-anchor="middle">{{ v_raw }}</text>{% endif %}
+  {% if w_raw > 0 %}<text x="{{ p_left_x | minus: 10 }}" y="124"  class="radar-value" text-anchor="end">{{ w_raw }}</text>{% endif %}
+  {% endunless %}
+
+</svg>
+
+{% endif %}

@@ -46,7 +46,14 @@ layout: default
   {% if page.skill_scores %}
   <div class="scorecard-wrapper">
     <div class="container">
-      {% include skill-scorecard.html %}
+      <div class="scorecard-layout">
+        <div class="scorecard-radar">
+          {% include skill-radar.html %}
+        </div>
+        <div class="scorecard-bars">
+          {% include skill-scorecard.html %}
+        </div>
+      </div>
     </div>
   </div>
   {% endif %}

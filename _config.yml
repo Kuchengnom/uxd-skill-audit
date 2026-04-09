@@ -24,6 +24,7 @@ kramdown:
       line_numbers: false
 
 # Collections
+# _skills/ Verzeichnis fuer kuenftige einzelne Skill-Referenzseiten (noch leer)
 collections:
   skills:
     output: true
@@ -41,6 +42,9 @@ defaults:
       type: "skills"
     values:
       layout: "skill"
+
+# skills/index.html ist eine statische Seite und ueberschreibt die Collection-URL.
+# Einzelne Skill-Seiten kommen in _skills/ (mit Unterstrich).
 
 # Exclude from build
 exclude:

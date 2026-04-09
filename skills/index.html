@@ -1,0 +1,115 @@
+---
+layout: default
+title: Skill-Uebersicht
+permalink: /skills/
+---
+
+<div class="post-header">
+  <div class="container">
+    <span class="post-category">Referenz</span>
+    <h1 class="post-title">Evaluierte Skills</h1>
+    <p style="color: var(--color-text-muted); font-family: var(--font-ui); max-width: 55ch; margin-top: var(--space-m);">
+      Alle bisher bewerteten Claude Design Skills auf einen Blick.
+      Jede Karte zeigt das Urteil und die vier Bewertungsdimensionen.
+      Scores von 1 (ungenuegend) bis 5 (vorbildlich).
+    </p>
+  </div>
+</div>
+
+<div class="page-section">
+  <div class="container">
+
+    {% assign evaluated = site.posts | where_exp: "post", "post.skill_reviewed" %}
+    {% assign sorted = evaluated | sort: "verdict" %}
+
+    {% comment %} Gruppierung nach Urteil {% endcomment %}
+    {% assign verdicts_order = "solide,vertrauen,vorsicht,ablehnen" | split: "," %}
+
+    {% for v in verdicts_order %}
+      {% assign group = evaluated | where: "verdict", v %}
+      {% if group.size > 0 %}
+
+        <div class="verdict-group">
+          <div class="verdict-group__label verdict--{{ v }}">
+            {% case v %}
+              {% when 'solide' %}Solide Grundlage
+              {% when 'vertrauen' %}Vertrauen mit Vorbehalt
+              {% when 'vorsicht' %}Vorsicht
+              {% when 'ablehnen' %}Nicht empfohlen
+            {% endcase %}
+            <span class="verdict-group__count">{{ group.size }}</span>
+          </div>
+
+          <div class="skill-grid">
+            {% for post in group %}
+            <article class="skill-card">
+              <header class="skill-card__header">
+                <div class="skill-card__meta">
+                  <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d. %b %Y" }}</time>
+                </div>
+                <h2 class="skill-card__repo">
+                  <a href="{{ post.url | relative_url }}">{{ post.skill_reviewed }}</a>
+                </h2>
+                <p class="skill-card__title">{{ post.title | split: ': ' | last | truncate: 80 }}</p>
+              </header>
+
+              {% if post.skill_scores %}
+              {% assign s = post.skill_scores %}
+              <div class="skill-card__scores">
+
+                <div class="mini-score">
+                  <span class="mini-score__label">Methodik</span>
+                  <div class="mini-score__bar">
+                    <div class="mini-score__fill" style="width: {{ s.methodische_fundierung | times: 20 }}%"></div>
+                  </div>
+                  <span class="mini-score__value">{{ s.methodische_fundierung }}/5</span>
+                </div>
+
+                <div class="mini-score">
+                  <span class="mini-score__label">Transparenz</span>
+                  <div class="mini-score__bar">
+                    <div class="mini-score__fill" style="width: {{ s.transparenz | times: 20 }}%"></div>
+                  </div>
+                  <span class="mini-score__value">{{ s.transparenz }}/5</span>
+                </div>
+
+                <div class="mini-score">
+                  <span class="mini-score__label">Validierbarkeit</span>
+                  <div class="mini-score__bar">
+                    <div class="mini-score__fill" style="width: {{ s.validierbarkeit | times: 20 }}%"></div>
+                  </div>
+                  <span class="mini-score__value">{{ s.validierbarkeit }}/5</span>
+                </div>
+
+                <div class="mini-score">
+                  <span class="mini-score__label">Wartbarkeit</span>
+                  <div class="mini-score__bar">
+                    <div class="mini-score__fill" style="width: {{ s.wartbarkeit | times: 20 }}%"></div>
+                  </div>
+                  <span class="mini-score__value">{{ s.wartbarkeit }}/5</span>
+                </div>
+
+              </div>
+              {% endif %}
+
+              <footer class="skill-card__footer">
+                <a href="{{ post.url | relative_url }}" class="skill-card__link">Evaluation lesen &rarr;</a>
+                {% if post.reading_time %}<span class="skill-card__readtime">{{ post.reading_time }} Min.</span>{% endif %}
+              </footer>
+            </article>
+            {% endfor %}
+          </div>
+
+        </div><!-- .verdict-group -->
+
+      {% endif %}
+    {% endfor %}
+
+    {% if evaluated.size == 0 %}
+    <p style="color: var(--color-text-muted); font-family: var(--font-ui);">
+      Noch keine Skills evaluiert. Die ersten Evaluationen erscheinen bald.
+    </p>
+    {% endif %}
+
+  </div>
+</div>

@@ -4,6 +4,7 @@ title: "Anthropics frontend-design: Der offizielle Skill mit einem fundamentalen
 date: 2026-03-05
 category: Skill-Evaluation
 skill_reviewed: "anthropics/claude-code — plugins/frontend-design"
+skill_github: "anthropics/claude-code"
 verdict: vorsicht
 reading_time: 9
 last_audited: "5. März 2026"

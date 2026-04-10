@@ -1,0 +1,26 @@
+{% comment %}
+  Deutsches Datum-Format: "%-d. Monatsname Jahr"
+  Verwendung: {% include date-de.html date=post.date %}
+             oder {% include date-de.html date=page.date %}
+{% endcomment %}
+
+{% assign _day   = include.date | date: "%-d" %}
+{% assign _month = include.date | date: "%-m" %}
+{% assign _year  = include.date | date: "%Y" %}
+
+{% case _month %}
+  {% when '1'  %}{% assign _month_name = "Januar" %}
+  {% when '2'  %}{% assign _month_name = "Februar" %}
+  {% when '3'  %}{% assign _month_name = "März" %}
+  {% when '4'  %}{% assign _month_name = "April" %}
+  {% when '5'  %}{% assign _month_name = "Mai" %}
+  {% when '6'  %}{% assign _month_name = "Juni" %}
+  {% when '7'  %}{% assign _month_name = "Juli" %}
+  {% when '8'  %}{% assign _month_name = "August" %}
+  {% when '9'  %}{% assign _month_name = "September" %}
+  {% when '10' %}{% assign _month_name = "Oktober" %}
+  {% when '11' %}{% assign _month_name = "November" %}
+  {% when '12' %}{% assign _month_name = "Dezember" %}
+{% endcase %}
+
+{{ _day }}. {{ _month_name }} {{ _year }}

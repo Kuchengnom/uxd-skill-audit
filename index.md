@@ -38,7 +38,7 @@ title: UX Skills Review
 
         <div class="post-list-item__body">
           <div class="post-list-item__meta">
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d. %B %Y" }}</time>
+            <time datetime="{{ post.date | date_to_xmlschema }}">{% include date-de.html date=post.date %}</time>
             {% if post.category %}
             <span class="tag">{{ post.category }}</span>
             {% endif %}

@@ -2,10 +2,10 @@
   <div class="container">
     <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
     <nav class="site-nav" aria-label="Hauptnavigation">
-      <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>Blog</a>
+      <a href="{{ '/' | relative_url }}" {% if page.url == '/' or page.layout == 'post' %}aria-current="page"{% endif %}>Blog</a>
       <a href="{{ '/skills/' | relative_url }}" {% if page.url contains '/skills/' %}aria-current="page"{% endif %}>Skills</a>
       <a href="{{ '/methodik/' | relative_url }}" {% if page.url contains '/methodik/' %}aria-current="page"{% endif %}>Methodik</a>
-      <a href="{{ '/ueber/' | relative_url }}" {% if page.url contains '/ueber/' %}aria-current="page"{% endif %}>Ueber</a>
+      <a href="{{ '/ueber/' | relative_url }}" {% if page.url contains '/ueber/' %}aria-current="page"{% endif %}>Über</a>
     </nav>
   </div>
 </header>

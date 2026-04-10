@@ -74,5 +74,5 @@
 <p class="scorecard-caption">
   Bewertet nach dem <a href="{{ '/methodik/' | relative_url }}">4-Dimensionen-Rahmen</a>.
   Jede Dimension: 1 (ungenuegend) bis 5 (vorbildlich).
-  Geprueft am: {{ page.last_audited | default: page.date | date: "%-d. %B %Y" }}.
+  Geprueft am: {% if page.last_audited %}{{ page.last_audited }}{% else %}{% include date-de.html date=page.date %}{% endif %}.
 </p>

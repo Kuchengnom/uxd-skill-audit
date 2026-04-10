@@ -2,6 +2,11 @@
 layout: default
 title: Der 4-Dimensionen-Rahmen
 permalink: /methodik/
+example_scores:
+  methodische_fundierung: 4
+  transparenz: 3
+  validierbarkeit: 4
+  wartbarkeit: 5
 ---
 
 <div class="post-header">
@@ -17,6 +22,21 @@ permalink: /methodik/
 <div class="post-content container" markdown="1">
 
 Das Skill-Oekosystem fuer Claude wächst schneller als es evaluiert wird. Stars auf GitHub, viral gegangene Tweets und schön formatierte READMEs sagen nichts über die methodische Qualitaet eines Skills aus. Dieser Blog benutzt deshalb vier Dimensionen zur Bewertung.
+
+---
+
+## Das Vier-Dimensionen-Modell — Visualisiert
+
+<div class="scorecard-wrapper">
+  <div style="width: 300px; margin: 0 auto;">
+    {% include skill-radar.html scores=page.example_scores size="full" %}
+  </div>
+  <p style="color: var(--color-text-muted); font-family: var(--font-ui); margin-top: var(--space-l); text-align: center; font-size: 0.9rem;">
+    <strong>Beispiel:</strong> Ein Skill mit hoher Wartbarkeit (5), solider Methodik (4) und Validierbarkeit (4), aber schwächerer Transparenz über Grenzen (3).
+  </p>
+</div>
+
+---
 
 ## Dimension 1: Methodische Fundierung (1–5)
 

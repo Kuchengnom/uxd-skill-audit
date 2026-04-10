@@ -483,17 +483,20 @@ hr {
 .radar-grid {
   fill: none;
   stroke: var(--color-border);
-  stroke-width: 1;
+  stroke-width: 0.8;
+  opacity: 0.6;
 }
 
 .radar-grid--outer {
   stroke: var(--color-text-muted);
-  stroke-width: 1.5;
+  stroke-width: 1.2;
+  opacity: 0.8;
 }
 
 .radar-axis {
-  stroke: var(--color-border);
+  stroke: var(--color-text-muted);
   stroke-width: 1;
+  opacity: 0.5;
 }
 
 .radar-data {

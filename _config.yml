@@ -24,11 +24,13 @@ kramdown:
       line_numbers: false
 
 # Collections
-# _skills/ Verzeichnis fuer kuenftige einzelne Skill-Referenzseiten (noch leer)
 collections:
   skills:
     output: true
     permalink: /skills/:name/
+  posts_en:
+    output: true
+    permalink: /en/:year/:month/:day/:name/
 
 # Defaults
 defaults:
@@ -37,6 +39,13 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      lang: "de"
+  - scope:
+      path: ""
+      type: "posts_en"
+    values:
+      layout: "post"
+      lang: "en"
   - scope:
       path: ""
       type: "skills"

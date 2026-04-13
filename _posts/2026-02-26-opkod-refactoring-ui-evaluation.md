@@ -4,6 +4,8 @@ title: "opkod-france/refactoring-ui: Gute Quelle, fragliche Portierung — und d
 date: 2026-02-26
 category: Skill-Evaluation
 skill_reviewed: "opkod-france/claude-skill-refactoring-ui"
+lang: de
+lang_url: "/en/2026/02/26/opkod-refactoring-ui-evaluation/"
 verdict: ablehnen
 reading_time: 7
 last_audited: "26. Februar 2026"

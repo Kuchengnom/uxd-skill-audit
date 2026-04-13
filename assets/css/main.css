@@ -486,6 +486,39 @@ hr {
   padding-bottom: var(--space-2xl);
 }
 
+/* --- Language Switch ------------------------------------------ */
+.site-header__right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+  letter-spacing: 0.04em;
+}
+
+.lang-switch__active {
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.lang-switch__sep {
+  color: var(--color-border);
+}
+
+.lang-switch__link {
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+.lang-switch__link:hover {
+  color: var(--color-accent);
+}
+
 /* --- Footer --------------------------------------------------- */
 .site-footer {
   background: var(--color-surface);

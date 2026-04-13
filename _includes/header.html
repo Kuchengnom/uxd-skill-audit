@@ -1,11 +1,46 @@
 <header class="site-header">
   <div class="container">
-    <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-    <nav class="site-nav" aria-label="Hauptnavigation">
-      <a href="{{ '/' | relative_url }}" {% if page.url == '/' or page.layout == 'post' %}aria-current="page"{% endif %}>Blog</a>
-      <a href="{{ '/skills/' | relative_url }}" {% if page.url contains '/skills/' %}aria-current="page"{% endif %}>Skills</a>
-      <a href="{{ '/methodik/' | relative_url }}" {% if page.url contains '/methodik/' %}aria-current="page"{% endif %}>Methodik</a>
-      <a href="{{ '/ueber/' | relative_url }}" {% if page.url contains '/ueber/' %}aria-current="page"{% endif %}>Über</a>
-    </nav>
+    {% if page.lang == "en" %}
+      <a class="site-title" href="{{ '/en/' | relative_url }}">{{ site.title }}</a>
+    {% else %}
+      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    {% endif %}
+
+    <div class="site-header__right">
+      <nav class="site-nav" aria-label="{% if page.lang == 'en' %}Main navigation{% else %}Hauptnavigation{% endif %}">
+        {% if page.lang == "en" %}
+          <a href="{{ '/en/' | relative_url }}"           {% if page.url == '/en/' or page.layout == 'post' and page.lang == 'en' %}aria-current="page"{% endif %}>Blog</a>
+          <a href="{{ '/en/skills/' | relative_url }}"    {% if page.url contains '/en/skills/' %}aria-current="page"{% endif %}>Skills</a>
+          <a href="{{ '/en/methodology/' | relative_url }}" {% if page.url contains '/en/methodology/' %}aria-current="page"{% endif %}>Methodology</a>
+          <a href="{{ '/en/about/' | relative_url }}"     {% if page.url contains '/en/about/' %}aria-current="page"{% endif %}>About</a>
+        {% else %}
+          <a href="{{ '/' | relative_url }}"              {% if page.url == '/' or page.layout == 'post' and page.lang != 'en' %}aria-current="page"{% endif %}>Blog</a>
+          <a href="{{ '/skills/' | relative_url }}"       {% if page.url contains '/skills/' and page.url != '/en/skills/' %}aria-current="page"{% endif %}>Skills</a>
+          <a href="{{ '/methodik/' | relative_url }}"     {% if page.url contains '/methodik/' %}aria-current="page"{% endif %}>Methodik</a>
+          <a href="{{ '/ueber/' | relative_url }}"        {% if page.url contains '/ueber/' %}aria-current="page"{% endif %}>Über</a>
+        {% endif %}
+      </nav>
+
+      <div class="lang-switch">
+        {% if page.lang == "en" %}
+          <span class="lang-switch__active" aria-current="true">EN</span>
+          <span class="lang-switch__sep">·</span>
+          {% if page.lang_url %}
+            <a class="lang-switch__link" href="{{ page.lang_url | relative_url }}" lang="de" hreflang="de">DE</a>
+          {% else %}
+            <a class="lang-switch__link" href="{{ '/' | relative_url }}" lang="de" hreflang="de">DE</a>
+          {% endif %}
+        {% else %}
+          {% if page.lang_url %}
+            <a class="lang-switch__link" href="{{ page.lang_url | relative_url }}" lang="en" hreflang="en">EN</a>
+          {% else %}
+            <a class="lang-switch__link" href="{{ '/en/' | relative_url }}" lang="en" hreflang="en">EN</a>
+          {% endif %}
+          <span class="lang-switch__sep">·</span>
+          <span class="lang-switch__active" aria-current="true">DE</span>
+        {% endif %}
+      </div>
+    </div>
+
   </div>
 </header>

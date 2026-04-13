@@ -5,6 +5,8 @@ date: 2026-03-05
 category: Skill-Evaluation
 skill_reviewed: "anthropics/claude-code — plugins/frontend-design"
 skill_github: "anthropics/claude-code"
+lang: de
+lang_url: "/en/2026/03/05/anthropic-frontend-design-evaluation/"
 verdict: vorsicht
 reading_time: 9
 last_audited: "5. März 2026"

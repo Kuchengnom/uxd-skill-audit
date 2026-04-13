@@ -13,7 +13,7 @@ layout: default
 
       <div class="post-meta">
         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-          {% include date-de.html date=page.date %}
+          {% if page.lang == "en" %}{% include date-en.html date=page.date %}{% else %}{% include date-de.html date=page.date %}{% endif %}
         </time>
         {% if page.skill_reviewed %}
         <span class="post-meta-sep">&middot;</span>

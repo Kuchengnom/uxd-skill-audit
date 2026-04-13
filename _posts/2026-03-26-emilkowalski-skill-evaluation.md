@@ -4,6 +4,8 @@ title: "emilkowalski/skill: So sollte ein Skill aussehen"
 date: 2026-03-26
 category: Skill-Evaluation
 skill_reviewed: "emilkowalski/skill"
+lang: de
+lang_url: "/en/2026/03/26/emilkowalski-skill-evaluation/"
 verdict: solide
 reading_time: 9
 last_audited: "26. März 2026"

@@ -1,0 +1,5 @@
+{% comment %}
+  English date format: "Month Day, Year"
+  Usage: {% include date-en.html date=page.date %}
+{% endcomment %}
+{{ include.date | date: "%B %-d, %Y" }}

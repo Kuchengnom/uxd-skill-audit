@@ -4,6 +4,8 @@ title: "ui-ux-pro-max: Wenn eine Datenbank zur Methodik erklärt wird"
 date: 2026-03-14
 category: Skill-Evaluation
 skill_reviewed: "nextlevelbuilder/ui-ux-pro-max-skill"
+lang: de
+lang_url: "/en/2026/03/14/nextlevelbuilder-ui-ux-pro-max-evaluation/"
 verdict: vorsicht
 reading_time: 10
 last_audited: "14. März 2026"

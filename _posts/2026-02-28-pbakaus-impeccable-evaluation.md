@@ -4,6 +4,8 @@ title: "pbakaus/impeccable: Das Design-Upgrade-Versprechen — Hält es das aus?
 date: 2026-02-28
 category: Skill-Evaluation
 skill_reviewed: "pbakaus/impeccable"
+lang: de
+lang_url: "/en/2026/02/28/pbakaus-impeccable-evaluation/"
 verdict: vertrauen
 reading_time: 11
 last_audited: "28. Februar 2026"

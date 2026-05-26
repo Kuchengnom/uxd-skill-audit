@@ -74,13 +74,13 @@ Ein perfekter Score wird nicht vergeben, weil er nicht verdient ist. Zwei Punkte
 
 Dieser Skill zeigt konkret was die vier Dimensionen des Bewertungsrahmens in der Praxis bedeuten:
 
-**Methodische Fundierung** ist nicht die Menge der enthaltenen Regeln. Es ist die Nachvollziehbarkeit der Begruendungen dahinter.
+Methodische Fundierung ist nicht die Menge der enthaltenen Regeln, sondern die Nachvollziehbarkeit der Begruendungen dahinter.
 
-**Transparenz** ist nicht der Disclaimer am Ende. Es ist die Art wie der Skill sich selbst beschreibt: als situationsabhaengiges Werkzeug, nicht als universelle Loesung.
+Transparenz ist nicht der Disclaimer am Ende. Es ist die Art wie der Skill sich selbst beschreibt: als situationsabhaengiges Werkzeug, nicht als universelle Loesung.
 
-**Validierbarkeit** ist nicht das Vorhandensein von Beispielen. Es ist die Moeglichkeit, die Prinzipien unabhaengig vom Skill selbst zu ueberpruefen — durch Quellartikel, reale Projekte, nachvollziehbare Argumentation.
+Validierbarkeit ist nicht das Vorhandensein von Beispielen. Es ist die Moeglichkeit, die Prinzipien unabhaengig vom Skill selbst zu ueberpruefen — durch Quellartikel, reale Projekte, nachvollziehbare Argumentation.
 
-**Wartbarkeit** ist nicht Anzahl der Commits. Es ist ein Maintainer mit verifizierbarem Urteilsvermoegen und Haut im Spiel.
+Wartbarkeit ist nicht Anzahl der Commits. Es ist ein Maintainer mit verifizierbarem Urteilsvermoegen und Haut im Spiel.
 
 ---
 

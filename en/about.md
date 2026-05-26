@@ -21,9 +21,9 @@ That is not a criticism of maintainers. It is the natural dynamic of an early ec
 
 This blog has two goals.
 
-**First:** Critically evaluate existing skills — with a transparent, reproducible framework. Not to condemn, but to distinguish: What is a usefully deployable tool? What is aesthetic preference disguised as methodology? What is still missing?
+The first goal is to critically evaluate existing skills — with a transparent, reproducible framework. Not to condemn, but to distinguish: What is a usefully deployable tool? What is aesthetic preference disguised as methodology? What is still missing?
 
-**Second:** Close the gaps. For every evaluated methodology, a dedicated skill is created — with SKILL.md, Python scripts for validation, reference materials and examples. Every skill explicitly communicates its own limitations.
+The second is to close the gaps. For every evaluated methodology, a dedicated skill is created — with SKILL.md, Python scripts for validation, reference materials and examples. Every skill explicitly communicates its own limitations.
 
 ## Who This Is For
 

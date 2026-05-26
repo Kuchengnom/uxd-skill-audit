@@ -50,11 +50,11 @@ Das ist kein kleines Versehen. Es zeigt ein Missverstaendnis darueber wie LLMs f
 
 ## Was das lehrt
 
-Erstens: **Offizielle Skills sind nicht per se korrekt.** Anthropic hat eine bessere Wartungsinfrastruktur als die meisten Community-Maintainer — aber auch Anthropics Skill-Team hat blinde Flecken, die externe Reviews aufdecken. Das oeffentliche Repo mit PR-Prozess ist hier ein echter Vorteil: Fehler werden sichtbar und korrigiert.
+Offizielle Skills sind nicht per se korrekt. Anthropic hat eine bessere Wartungsinfrastruktur als die meisten Community-Maintainer — aber auch Anthropics Skill-Team hat blinde Flecken, die externe Reviews aufdecken. Das oeffentliche Repo mit PR-Prozess ist hier ein echter Vorteil: Fehler werden sichtbar und korrigiert.
 
-Zweitens: **Anweisungen muessen mit den Faehigkeiten des Modells uebereinstimmen.** Eine SKILL.md ist kein Wunschzettel — sie ist ein Prompt. Und Prompts die auf Informationen referenzieren, die das Modell nicht haben kann, erzeugen Verhalten das unvorhersehbar ist oder still ignoriert wird.
+Anweisungen muessen ausserdem mit den Faehigkeiten des Modells uebereinstimmen. Eine SKILL.md ist kein Wunschzettel — sie ist ein Prompt. Und Prompts die auf Informationen referenzieren, die das Modell nicht haben kann, erzeugen Verhalten das unvorhersehbar ist oder still ignoriert wird.
 
-Drittens: **Aesthetik-Verbote sind kein Usability-Rahmen.** Auch dieser offizielle Skill adressiert keine Usability-Fragen, keine Cognitive Load, keine Accessibility jenseits von erwaehnenswerten Randnotizen. Die Frage "Wird dieses Interface von seinen Nutzern verstanden?" taucht nicht auf.
+Und schliesslich: Aesthetik-Verbote sind kein Usability-Rahmen. Auch dieser offizielle Skill adressiert keine Usability-Fragen, keine Cognitive Load, keine Accessibility jenseits von erwaehnenswerten Randnotizen. Die Frage "Wird dieses Interface von seinen Nutzern verstanden?" taucht nicht auf.
 
 ## Was der Skill gut macht
 

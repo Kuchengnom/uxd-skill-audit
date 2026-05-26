@@ -60,9 +60,9 @@ This is the fundamental maintenance problem of the skill ecosystem: skills are n
 
 Three questions to ask *before* installing a skill:
 
-1. **When was the repository last updated?** More than 3 months without a commit is a warning sign.
-2. **Are there open issues without responses?** This shows whether the maintainer is still active.
-3. **Is a team or an individual behind it?** Solo projects die with the maintainer's interest.
+1. When was the repository last updated? More than 3 months without a commit is a warning sign.
+2. Are there open issues without responses? This shows whether the maintainer is still active.
+3. Is a team or an individual behind it? Solo projects die with the maintainer's interest.
 
 ## Verdict
 

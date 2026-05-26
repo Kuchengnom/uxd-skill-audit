@@ -54,7 +54,7 @@ By comparison: WCAG 2.1 has a source citation, a success criteria hierarchy and 
 
 161 color palettes. 14 supported coding agents. "344+ design resources." These numbers are the project's main argument — the website, the README, the descriptions all emphasize quantity.
 
-This is a pattern students should recognize: **Size is not a quality indicator.** A database with 1000 color palettes without provenance and context is less valuable than a well-considered color system with 12 tokens and clear semantics.
+This is a pattern students should recognize: size is not a quality indicator. A database with 1000 color palettes without provenance and context is less valuable than a well-considered color system with 12 tokens and clear semantics.
 
 More is only more when the more is also better. With this skill, that is unclear.
 

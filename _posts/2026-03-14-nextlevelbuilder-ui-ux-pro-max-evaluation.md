@@ -54,7 +54,7 @@ Zum Vergleich: WCAG 2.1 hat fuer jede Richtlinie eine Quellenangabe, eine Erfolg
 
 161 Farbpaletten. 14 unterstuetzte Coding-Agenten. "344+ Design-Ressourcen." Diese Zahlen sind das Hauptargument des Projekts — die Website, die README, die Beschreibungen betonen Quantitaet.
 
-Das ist ein Muster, das Studierende erkennen sollen: **Groesse ist kein Guetezeichen.** Eine Datenbank mit 1000 Farbpaletten ohne Herkunft und Kontext ist weniger wertvoll als ein durchdachtes Farbsystem mit 12 Tokens und klarer Semantik.
+Das ist ein Muster, das Studierende erkennen sollen: Groesse ist kein Guetezeichen. Eine Datenbank mit 1000 Farbpaletten ohne Herkunft und Kontext ist weniger wertvoll als ein durchdachtes Farbsystem mit 12 Tokens und klarer Semantik.
 
 Mehr ist nur dann mehr, wenn das Mehr auch besser ist. Bei diesem Skill ist das unklar.
 

@@ -74,13 +74,13 @@ A perfect score is not awarded, because it has not been earned. Two points remai
 
 This skill concretely shows what the four evaluation dimensions mean in practice:
 
-**Methodological rigor** is not the number of rules included. It is the traceability of the reasoning behind them.
+Methodological rigor is not the number of rules included, but the traceability of the reasoning behind them.
 
-**Transparency** is not the disclaimer at the end. It is the way the skill describes itself: as a context-dependent tool, not a universal solution.
+Transparency is not the disclaimer at the end. It is the way the skill describes itself: as a context-dependent tool, not a universal solution.
 
-**Testability** is not the presence of examples. It is the ability to verify the principles independently of the skill itself — through source articles, real projects, traceable argumentation.
+Testability is not the presence of examples. It is the ability to verify the principles independently of the skill itself — through source articles, real projects, traceable argumentation.
 
-**Maintainability** is not commit count. It is a maintainer with verifiable judgment and skin in the game.
+Maintainability is not commit count. It is a maintainer with verifiable judgment and skin in the game.
 
 ---
 

@@ -19,9 +19,9 @@ Das ist kein Vorwurf an die Maintainer. Es ist die natuerliche Dynamik eines fru
 
 Dieser Blog hat zwei Ziele.
 
-**Erstens:** Existierende Skills kritisch evaluieren — mit einem transparenten, reproduzierbaren Rahmen. Nicht um zu verurteilen, sondern um zu unterscheiden: Was ist ein genutzlich einsetzbares Werkzeug? Was ist Aesthetik-Praeferenz, die als Methodik verkleidet ist? Was fehlt noch?
+Das erste Ziel ist, existierende Skills kritisch zu evaluieren — mit einem transparenten, reproduzierbaren Rahmen. Nicht um zu verurteilen, sondern um zu unterscheiden: Was ist ein genutzlich einsetzbares Werkzeug? Was ist Aesthetik-Praeferenz, die als Methodik verkleidet ist? Was fehlt noch?
 
-**Zweitens:** Die Luecken schliessen. Fuer jede evaluierte Methodik entsteht ein eigener Skill — mit SKILL.md, Python-Skripten zur Validierung, Referenzmaterialien und Beispielen. Jeder Skill kommuniziert explizit seine eigenen Grenzen.
+Das zweite ist, die Luecken zu schliessen. Fuer jede evaluierte Methodik entsteht ein eigener Skill — mit SKILL.md, Python-Skripten zur Validierung, Referenzmaterialien und Beispielen. Jeder Skill kommuniziert explizit seine eigenen Grenzen.
 
 ## Fuer wen
 

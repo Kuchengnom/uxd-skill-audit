@@ -39,11 +39,7 @@ But reputation is not method. Let's look inside.
 
 ## Structure: 7 Files, 20 Slash Commands
 
-The skill is openly structured:
-- **References**: Typography, OKLCH color space, motion, interaction, spacing, dark mode, accessibility
-- **Commands**: 20 different commands covering all aspects
-
-That is not breadth — it is *appropriate* breadth for the scope "frontend design." Compared to other skills, that is refreshingly focused.
+The skill is openly structured: seven reference files (Typography, OKLCH color space, motion, interaction, spacing, dark mode, accessibility) and 20 slash commands covering all aspects. That is not breadth for breadth's sake — it is appropriate scope for "frontend design." Compared to other skills, that is refreshingly focused.
 
 The problem: we need to actually read the reference files to know what is inside.
 
@@ -73,53 +69,35 @@ A solid skill says: "This is what I am. Here are the limitations. Here are the s
 
 ## An Honest Assessment of What the Skill Delivers
 
-Positive: The skill is **consistently implemented**. The 20 commands are not arbitrary. They follow a recognizable logic. `/suggest-typography` is related to `/optimize-spacing` — both follow mathematical/design principles.
+The 20 commands are consistent and follow a recognizable logic: `/suggest-typography` and `/optimize-spacing` are related, both grounded in mathematical design principles. Scope is clear — frontend design, not "everything for UX."
 
-Positive: **Scope clarity**. It is a frontend design skill, not "everything for UX."
-
-Negative: **No structured test cases**. If I run `/suggest-color-palette`, how do I verify if the output is good? A skill could say: "With base design X, the palette should satisfy properties [A, B, C]." That I could test.
-
-Negative: **No comparability to baseline**. Anthropic's `frontend-design` is a baseline. `impeccable` claims to be better. Where are the metrics for that?
+What's missing: if I run `/suggest-color-palette`, how do I verify whether the output is good? A skill could show this — "With base design X, the palette should satisfy properties [A, B, C]" — that would be testable. And if `impeccable` is supposed to be better than Anthropic's `frontend-design`: where are the metrics for that?
 
 ## The Four Dimensions in Detail
 
-**Methodological Rigor: 4/5**
+### Methodological rigor: 4/5
 
-The references exist and have names. That is better than 10 principles without sources. But the *porting* of the methods is not fully documented. A footnote "Typography based on Robert Bringhurst, Thinking with Type" would clarify everything. It does not exist.
+The references exist and have names. That is better than 10 principles without sources. But the porting of the methods is not fully documented. A footnote "Typography based on Robert Bringhurst, Thinking with Type" would clarify everything. It does not exist.
 
-**Transparency of Limitations: 3/5**
+### Transparency of limitations: 3/5
 
-The skill does not say: "I cannot enforce inclusive design" or "I have no cultural sensitivity." It also does not say "Dark mode is only calculated based on mechanical contrasts, not perceptual contexts."
+The skill does not say: "I cannot enforce inclusive design" or "Dark mode is only calculated based on mechanical contrasts, not perceptual contexts." Instead, "Accessibility" is presented as one file among seven — as if a single file solves the problem. That is not malicious. But it is a promise larger than the truth.
 
-Instead, "Accessibility" is presented as one file among seven — as if a single file solves the problem.
+### Testability: 3/5
 
-**Testability: 3/5**
+The commands are documented, that is verifiable. But there is no quality standard. Which output is "good"? A framework like Nielsen or Kowalski could show this: "With this input definition, this output should emerge." Without test cases, the skill cannot be objectively verified.
 
-The commands are documented. That is verifiable. But there is no quality standard. Which output is "good"? A framework like Nielsen or Kowalski could show this: "With this input definition, this output should emerge." Without test cases, the skill cannot be objectively verified.
-
-**Maintainability: 4/5**
+### Maintainability: 4/5
 
 Paul Bakaus is an active author, the repositories are maintained, there are releases. Solid. The only note: it is still very new (3 weeks). How long will the maintenance last? Kowalski has years of production expertise behind him. Bakaus has an enthusiastic community but not yet a long-term track record.
 
 ## What the Skill Is Good For — and What It Is Not
 
-**Good for**: Designers wanting a structured entry into frontend constraints. The organization is logical. The breadth is adequate.
-
-**Not good for**: Teams that need to *prove* their design decisions are methodologically sound. For that, you need sources and test cases.
-
-**Risk**: Students might believe the skill generates a "complete design system." That is false. The skill provides constraints, not systems.
+For designers wanting a structured entry into frontend constraints, the skill works well. The organization is logical, the breadth adequate. Teams that need to prove their design decisions are methodologically sound won't get far with it — for that, you need sources and test cases. And students should know: the skill provides constraints, not a complete design system.
 
 ## Verdict: Trust, Not Solid
 
-This skill deserves the trust of its users **because**:
-- The author has verifiable knowledge
-- The structure is logical
-- The commands are practical
-
-This skill does **not** deserve a "Solid Foundation" rating **because**:
-- The source bases are not transparent
-- The comparison to Anthropic is a marketing framing, not scientific
-- No structured test cases exist to verify quality
+The skill earns trust because the author has verifiable knowledge, the structure is logical, and the commands are practical. It does not earn "Solid Foundation" because the source bases are not transparent, the Anthropic comparison is a marketing framing rather than a methodological one, and no test cases exist to verify quality.
 
 ---
 

@@ -84,4 +84,4 @@ Die Aesthetik-Entscheidungen des Skills koennen als Ausgangspunkt dienen — abe
 
 taste-skill ist ein ehrliches Aesthetik-Werkzeug, das sich nicht als UX-Methodik verkleidet — aber auch nicht kommuniziert, was es *nicht* ist. Fuer fortgeschrittene Nutzer mit UX-Grundkenntnissen ist das kein Problem. Fuer Studierende, die lernen sollen was Design-Qualitaet bedeutet, fehlt genau dieser Kontext.
 
-**Empfehlung:** Einsetzen mit expliziter Erg&auml;nzung durch einen Accessibility-Audit-Skill. Nie allein als Qualitaetsmerkmal verwenden.
+Empfehlung: Einsetzen mit expliziter Erg&auml;nzung durch einen Accessibility-Audit-Skill. Nie allein als Qualitaetsmerkmal verwenden.

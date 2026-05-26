@@ -39,11 +39,7 @@ Aber Reputation ist nicht Methode. Schauen wir rein.
 
 ## Struktur: 7 Dateien, 20 Slash-Commands
 
-Der Skill ist offen strukturiert:
-- **Referenzen**: Typografie, OKLCH-Farbraum, Motion, Interaction, Spacing, Dark Mode, Accessibility
-- **Commands**: 20 verschiedene Befehle die alle Aspekte abdecken
-
-Das ist nicht Breite — das ist *angemessene* Breite für den Scope "Frontend-Design". Im Vergleich zu anderen Skills ist das erfrischend fokussiert.
+Der Skill ist offen strukturiert: sieben Referenzdateien (Typografie, OKLCH-Farbraum, Motion, Interaction, Spacing, Dark Mode, Accessibility) und 20 Slash-Commands die alle Aspekte abdecken. Das ist nicht Breite um der Breite willen — das ist angemessener Scope für "Frontend-Design". Im Vergleich zu anderen Skills ist das erfrischend fokussiert.
 
 Das Problem: Wir müssen die Referenzdateien tatsächlich lesen um zu wissen was drin steckt.
 
@@ -73,61 +69,35 @@ Ein solider Skill sagt: "Das bin ich. Hier sind die Grenzen. Hier sind die Quell
 
 ## Was der Skill tatsächlich leistet — ein ehrliches Assessment
 
-Positiv: Der Skill ist **konsistent implementiert**. Die 20 Commands sind nicht willkürlich. Sie folgen einer erkennbaren Logik. `/suggest-typography` ist verwandt mit `/optimize-spacing` — beide folgen mathematischen/gestalterischen Prinzipien.
+Die 20 Commands sind konsistent und folgen einer erkennbaren Logik: `/suggest-typography` und `/optimize-spacing` sind verwandt, beide an mathematischen Gestaltungsprinzipien orientiert. Scope ist klar — Frontend-Design, nicht "alles für UX."
 
-Positiv: **Scope-Klarheit**. Es ist ein Frontend-Design-Skill, nicht "alles für UX."
-
-Negativ: **Keine strukturierten Testfälle**. Wenn ich `/suggest-color-palette` starte, wie überprüfe ich ob der Output gut ist? Ein Skill könnte sagen: "Mit Basis-Design X sollte die Palette die Properties [A, B, C] erfüllen." Das würde ich testen können.
-
-Negativ: **Keine Vergleichbarkeit zu Baseline**. Anthropics `frontend-design` ist ein Baseline. `impeccable` behauptet besser zu sein. Wo sind die Metriken dafür?
+Was fehlt: Wenn ich `/suggest-color-palette` starte, wie überprüfe ich ob der Output gut ist? Ein Skill könnte das zeigen — "Mit Basis-Design X sollte die Palette die Properties [A, B, C] erfüllen" — das wäre testbar. Und wenn `impeccable` besser als Anthropics `frontend-design` sein soll: Wo sind die Metriken dafür?
 
 ## Die vier Dimensionen im Detail
 
-**Methodische Fundierung: 4 von 5**
+### Methodische Fundierung: 4/5
 
-Die Referenzen existieren und haben Namen. Das ist besser als 10 Prinzipien ohne Quellen. Aber: die *Portierung* der Methoden ist nicht vollständig dokumentiert. Nielsen's Heuristiken können falsch portiert werden, genau wie alles andere. Hier sehen wir die Struktur, nicht die Arbeit dahinter.
+Die Referenzen existieren und haben Namen. Das ist besser als 10 Prinzipien ohne Quellen. Aber die Portierung der Methoden ist nicht vollständig dokumentiert. Nielsen's Heuristiken können falsch portiert werden, genau wie alles andere. Hier sehen wir die Struktur, nicht die Arbeit dahinter. Eine Fußnote "Typography basiert auf Robert Bringhurst, Thinking with Type" würde alles klären. Sie existiert nicht.
 
-Punkt abgezogen weil: Eine Fußnote "Typography basiert auf Robert Bringhurst, Thinking with Type" würde alles klären. Sie existiert nicht.
+### Transparenz der Grenzen: 3/5
 
-**Transparenz der Grenzen: 3 von 5**
+Der Skill sagt nicht: "Ich kann kein inklusives Design erzwingen" oder "Dark Mode wird nur auf Basis mechanischer Kontraste berechnet, nicht auf Wahrnehmungs-Kontexte." Stattdessen wird "Accessibility" als eine Datei unter sieben präsentiert — als würde eine Datei das Problem lösen. Das ist nicht böse gemeint. Aber es ist ein Versprechen, das größer ist als die Wahrheit.
 
-Der Skill sagt nicht: "Ich kann kein inklusive Design erzwingen" oder "Ich kenne keine Kultur-Sensibilität." Er sagt auch nicht "Dark Mode wird nur auf Basis mechanischer Kontraste berechnet, nicht auf Wahrnehmungs-Kontexte."
+### Validierbarkeit: 3/5
 
-Stattdessen wird "Accessibility" als eine Datei unter sieben präsentiert — als würde eine Datei das Problem lösen.
+Die Commands sind dokumentiert, das ist verifizierbar. Aber es gibt keinen Qualitäts-Standard. Welcher Output ist "gut"? Ein Framework wie Nielsen oder Kowalski könnte das zeigen: "Bei dieser Input-Definition sollte dieser Output entstehen." Ohne Testfälle lässt sich der Skill nicht objektiv überprüfen.
 
-Das ist nicht böse gemeint. Aber es ist ein Versprechen das größer ist als die Wahrheit. Deshalb: 3 Punkte.
+### Wartbarkeit: 4/5
 
-**Validierbarkeit: 3 von 5**
-
-Die Commands sind dokumentiert. Das ist verifizierbar. Aber: es gibt keinen Qualitäts-Standard. Welcher Output ist "gut"? Ein Framework wie Nielsen oder Kowalski könnte das zeigen: "Bei dieser Input-Definition sollte dieser Output entstehen."
-
-Ohne Testfälle kann ich den Skill nicht objektiv überprüfen.
-
-**Wartbarkeit: 4 von 5**
-
-Paul Bakaus ist ein aktiver Autor, die Repositories sind gepflegt, es gibt Releases. Das ist solide. Der einzige Punkt: Es ist noch sehr neu (3 Wochen!). Wie lange hält die Maintenance? Kowalski hat Jahre von Production-Expertise hinter sich. Bakaus hat begeisterte Community aber noch keine langfristige Spur.
-
-Das ist kein Mangel, eher: Zeit wird das zeigen.
+Paul Bakaus ist ein aktiver Autor, die Repositories sind gepflegt, es gibt Releases. Solide. Der einzige Vorbehalt: Es ist noch sehr neu (3 Wochen!). Wie lange hält die Maintenance? Kowalski hat Jahre von Production-Expertise hinter sich. Bakaus hat eine begeisterte Community, aber noch keine langfristige Spur. Das ist kein Mangel — Zeit wird das zeigen.
 
 ## Wofür der Skill gut ist — und wofür nicht
 
-**Gut für**: Designer die einen strukturierten Einstieg in Frontend-Constraints wollen. Die Organisierung ist logisch. Die Breite ist adäquat.
-
-**Nicht gut für**: Teams die *beweisen* müssen dass ihre Designentscheidungen methodisch sound sind. Dafür braucht man Quellen und Testfälle.
-
-**Risiko**: Studierende könnten glauben dass der Skill ein "komplettes Design-System" erzeugt. Das ist falsch. Der Skill gibt Constraints, nicht Systeme.
+Für Designer die einen strukturierten Einstieg in Frontend-Constraints wollen, ist der Skill sinnvoll. Die Organisierung ist logisch, die Breite adäquat. Teams die ihre Designentscheidungen methodisch belegen müssen, kommen damit nicht weit — dafür braucht es Quellen und Testfälle. Und Studierende sollten wissen: Der Skill liefert Constraints, kein vollständiges Design-System.
 
 ## Das Urteil: Vertrauen statt Ablehnung, aber nicht Solide
 
-Dieser Skill verdient das Vertrauen seiner Nutzer **weil**:
-- Der Autor verifizierbares Wissen hat
-- Die Struktur logisch ist
-- Die Commands praktisch sind
-
-Dieser Skill verdient **nicht** das "Solide"-Urteil **weil**:
-- Die Quellenbasen nicht transparent sind
-- Der Vergleich zu Anthropic ein Marketing-Framing ist, nicht wissenschaftlich
-- Keine strukturierten Testfälle existieren um Qualität zu überprüfen
+Vertrauen verdient der Skill, weil der Autor überprüfbares Wissen hat, die Struktur stimmt und die Commands in der Praxis funktionieren. Das "Solide" fehlt, weil die Quellenbasen nicht transparent kommuniziert werden, der Anthropic-Vergleich ein Marketing-Framing ist, und keine Testfälle existieren um Qualität zu überprüfen.
 
 ---
 

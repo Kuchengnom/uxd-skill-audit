@@ -50,11 +50,11 @@ This is not a minor oversight. It reveals a misunderstanding of how LLMs work th
 
 ## What This Teaches
 
-First: **Official skills are not inherently correct.** Anthropic has better maintenance infrastructure than most community maintainers — but even Anthropic's skill team has blind spots that external reviews uncover. The public repo with PR process is a genuine advantage here: errors become visible and are corrected.
+Official skills are not inherently correct. Anthropic has better maintenance infrastructure than most community maintainers — but even Anthropic's skill team has blind spots that external reviews uncover. The public repo with PR process is a genuine advantage here: errors become visible and are corrected.
 
-Second: **Instructions must align with the model's capabilities.** A SKILL.md is not a wish list — it is a prompt. And prompts that reference information the model cannot have generate behavior that is unpredictable or silently ignored.
+Instructions must also align with the model's capabilities. A SKILL.md is not a wish list — it is a prompt. And prompts that reference information the model cannot have generate behavior that is unpredictable or silently ignored.
 
-Third: **Aesthetic bans are not a usability framework.** Even this official skill addresses no usability questions, no cognitive load, no accessibility beyond passing mentions. The question "Will this interface be understood by its users?" does not appear.
+And finally: aesthetic bans are not a usability framework. Even this official skill addresses no usability questions, no cognitive load, no accessibility beyond passing mentions. The question "Will this interface be understood by its users?" does not appear.
 
 ## What the Skill Does Well
 

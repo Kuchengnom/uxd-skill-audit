@@ -84,4 +84,4 @@ The aesthetic decisions of the skill can serve as a starting point — but they 
 
 taste-skill is an honest aesthetic tool that does not explicitly disguise itself as UX methodology — but also does not communicate what it is *not*. For experienced users with UX foundations, that is not a problem. For students learning what design quality means, that context is precisely what is missing.
 
-**Recommendation:** Use with explicit augmentation by an accessibility audit skill. Never use alone as a quality criterion.
+Recommendation: Use with explicit augmentation by an accessibility audit skill. Never use alone as a quality criterion.

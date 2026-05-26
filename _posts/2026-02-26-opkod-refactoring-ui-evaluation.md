@@ -60,9 +60,9 @@ Das ist das fundamentale Wartungsproblem des Skill-Oekosystems: Skills werden ni
 
 Drei Fragen die man stellen sollte, *bevor* man einen Skill installiert:
 
-1. **Wann wurde das Repo zuletzt aktualisiert?** Mehr als 3 Monate ohne Commit ist ein Warnsignal.
-2. **Gibt es offene Issues ohne Antwort?** Das zeigt ob der Maintainer noch aktiv ist.
-3. **Steht ein Team oder eine Einzelperson dahinter?** Einzelpersonen-Projekte sterben mit dem Interesse des Maintainers.
+1. Wann wurde das Repo zuletzt aktualisiert? Mehr als 3 Monate ohne Commit ist ein Warnsignal.
+2. Gibt es offene Issues ohne Antwort? Das zeigt ob der Maintainer noch aktiv ist.
+3. Steht ein Team oder eine Einzelperson dahinter? Einzelpersonen-Projekte sterben mit dem Interesse des Maintainers.
 
 ## Fazit
 

@@ -33,7 +33,7 @@ Das Format selbst ist keine Erfindung des Projekts. DESIGN.md ist eine offene Sp
 
 ## Was in einer Datei tatsächlich steht
 
-Ich habe die Claude-Datei vollständig gelesen, weil sie die einzige im Bestand ist, deren Vorlage ich gegen die Beschreibung prüfen kann. Sie enthält 25 benannte Farbtoken mit Hex-Wert und Funktionszuweisung, eine vierzehnstufige Typografietabelle mit Größe, Gewicht, Zeilenhöhe und Laufweite, 29 Komponentendefinitionen inklusive Zuständen, eine Spacing-Skala mit 4px-Basiseinheit, Breakpoints mit konkreten Umbruchregeln, dazu durchgehende Token-Referenzen statt Inline-Hexwerten wie `{colors.primary}`, `{typography.display-xl}`). Das ist handwerklich deutlich sorgfältiger als das, was in dieser Serie unter dem Etikett "Design-Intelligenz" schon durchgegangen ist.
+Ich habe die Claude-Datei vollständig gelesen, weil sie die einzige im Bestand ist, deren Vorlage ich gegen die Beschreibung prüfen kann. Sie enthält 25 benannte Farbtoken mit Hex-Wert und Funktionszuweisung, eine vierzehnstufige Typografietabelle mit Größe, Gewicht, Zeilenhöhe und Laufweite, 29 Komponentendefinitionen inklusive Zuständen, eine Spacing-Skala mit 4px-Basiseinheit, Breakpoints mit konkreten Umbruchregeln, dazu durchgehende Token-Referenzen statt Inline-Hexwerten wie `{colors.primary}`, `{typography.display-xl}`. Das ist handwerklich deutlich sorgfältiger als das, was in dieser Serie unter dem Etikett "Design-Intelligenz" schon durchgegangen ist.
 
 Bemerkenswert ist der Abschnitt "Known Gaps" am Ende jeder Datei. Dort steht ausdrücklich, dass Copernicus und StyreneB lizenzierte Anthropic-Schriften sind und nicht als Webfonts verfügbar; dass Animations- und Übergangszeiten nicht erfasst wurden; dass Formularfehlerzustände fehlen, weil sie ohne Anmeldeprozess nicht beobachtbar waren. Und, das ist der wichtigste Satz des ganzen Dokuments, dass die tatsächliche Produktoberfläche von claude.ai ausdrücklich *nicht* Gegenstand des Dokuments ist, sondern nur die Marketing-Oberfläche. Wer eine Chat-Anwendung baut und die Claude-DESIGN.md einsetzt, erhält also die Formensprache einer Landingpage, nicht die eines Produkts. Dass das Projekt diesen Unterschied selbst benennt, statt ihn zu verwischen, ist die stärkste Einzelleistung im Bestand. Die Dateien tragen im Kopf zudem ein `version: alpha`.
 
@@ -46,10 +46,10 @@ Genau hier wird es überprüfbar. Ich habe die dokumentierten Farbpaare durchger
 | Paar | Kontrast | WCAG AA (Text) |
 | --- | --- | --- |
 | `on-primary` #ffffff auf `primary` #cc785c, Label des Primärbuttons, 14px | 3,28 : 1 | durchgefallen |
-| `primary` #cc785c auf `canvas` #faf9f5 — Textlink in Body-Größe | 3,11 : 1 | durchgefallen |
-| `muted-soft` #8e8b82 auf `canvas` — Bildunterschriften, Kleingedrucktes | 3,23 : 1 | durchgefallen |
-| `accent-amber` #e8a55a auf `canvas` — Kategorie-Badges | 2,00 : 1 | durchgefallen |
-| `ink` #141413 auf `canvas` — Überschriften und Fließtext | 17,50 : 1 | bestanden |
+| `primary` #cc785c auf `canvas` #faf9f5, Textlink in Body-Größe | 3,11 : 1 | durchgefallen |
+| `muted-soft` #8e8b82 auf `canvas`, Bildunterschriften und Kleingedrucktes | 3,23 : 1 | durchgefallen |
+| `accent-amber` #e8a55a auf `canvas`, Kategorie-Badges | 2,00 : 1 | durchgefallen |
+| `ink` #141413 auf `canvas`, Überschriften und Fließtext | 17,50 : 1 | bestanden |
 
 Das Fundament der Datei ist tragfähig: Fließtext und Überschriften liegen weit über der Anforderung. Aber die Beschriftung des Primärbuttons, die Textlinkfarbe und alle Badge-Töne verfehlen die 4,5:1 für Text in Standardgröße. Das ist keine Nachlässigkeit von VoltAgent, sondern die getreue Abbildung einer real existierenden Website. Die Extraktion funktioniert also genau wie versprochen. Das Problem entsteht erst durch die Umetikettierung: Sobald diese Werte in einer Tabelle mit Rollenzuweisungen und einem "nicht verhandelbar" daneben stehen, sehen ein Agent und eine Studentin ein geprüftes System, wo eine Momentaufnahme vorliegt.
 
@@ -72,6 +72,6 @@ Bleibt die Frage, die das Projekt selbst nicht stellt: Was bedeutet es, die visu
 
 ## Empfehlung für den Unterrichtseinsatz
 
-Dieses Projekt gehört in den Unterricht — als Lesestoff, nicht als Werkzeug. Es ist das beste verfügbare Beispiel für den Unterschied zwischen deskriptiv und normativ, und dieser Unterschied ist an einer einzigen Datei in einer Doppelstunde zeigbar. Eine belastbare Übung: Studierende lassen einen Agenten mit der Claude-DESIGN.md eine Seite bauen, prüfen das Ergebnis anschließend mit einem Kontrast-Checker und formulieren die "Do's and Don'ts" von Markenkonformitätsregeln in Gestaltungsqualitätsregeln um. Wo sie sich widersprechen, liegt der Lernstoff.
+Dieses Projekt gehört in den Unterricht, als Lesestoff und nicht als Werkzeug. Es ist das beste verfügbare Beispiel für den Unterschied zwischen deskriptiv und normativ, und dieser Unterschied ist an einer einzigen Datei in einer Doppelstunde zeigbar. Eine belastbare Übung: Studierende lassen einen Agenten mit der Claude-DESIGN.md eine Seite bauen, prüfen das Ergebnis anschließend mit einem Kontrast-Checker und formulieren die "Do's and Don'ts" von Markenkonformitätsregeln in Gestaltungsqualitätsregeln um. Wo sie sich widersprechen, liegt der Lernstoff.
 
 Für die eigene Praxis gilt eine engere Empfehlung. Als Startpunkt für ein Tokenschema, als Vokabeltraining für die Beschreibung visueller Systeme und als Vorlage für ein eigenes, selbst verantwortetes DESIGN.md ist die Sammlung wertvoll. Die neun Abschnitte sind eine brauchbare Struktur, und die Known-Gaps-Sektion ist ein Muster, das man übernehmen sollte. Als Fertigteil für ein Produkt ist sie es nicht: Man importiert die Oberflächensprache einer Marketingseite fremder Marken, ungeprüft in der Barrierefreiheit, ohne Stand-Datum, ohne dokumentierte Herkunft. Wer sie einsetzt, sollte drei Dinge selbst tun, die die Datei nicht tut: Kontraste nachrechnen, Markenmerkmale durch eigene ersetzen und ein Datum daruntersetzen.

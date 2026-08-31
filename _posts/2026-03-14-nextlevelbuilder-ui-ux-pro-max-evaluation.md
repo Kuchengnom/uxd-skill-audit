@@ -23,7 +23,7 @@ skill_scores:
 tags:
   - datenbank
   - ui-ux
-  - quantitaet
+  - quantität
   - skill-evaluation
 ---
 
@@ -33,7 +33,7 @@ Aber Vollständigkeit ist keine Methodik.
 
 ## Was der Skill ist
 
-`ui-ux-pro-max` von nextlevelbuilder ist im Kern eine durchsuchbare Datenbank. CSV-Dateien im `data/`-Verzeichnis speichern Design-Ressourcen: Styles, Farben, Typografie, Produkttypen. Ein Python-basiertes Such-Interface mit dem Befehl `--design-system` durchsucht diese Datenbank anhand von Projektanforderungen und generiert in Sekunden ein „komplettes, massgeschneidertes Design-System".
+`ui-ux-pro-max` von nextlevelbuilder ist im Kern eine durchsuchbare Datenbank. CSV-Dateien im `data/`-Verzeichnis speichern Design-Ressourcen: Styles, Farben, Typografie, Produkttypen. Ein Python-basiertes Such-Interface mit dem Befehl `--design-system` durchsucht diese Datenbank anhand von Projektanforderungen und generiert in Sekunden ein „komplettes, maßgeschneidertes Design-System".
 
 Das Flaggschiff von v2.0 ist der *Design System Generator*, eine „AI-powered reasoning engine" die Anforderungen analysiert und passende Design-Entscheidungen ausspielt. Das klingt nach intelligentem Urteilen. Es ist Pattern-Matching auf CSV-Daten.
 
@@ -58,11 +58,11 @@ Das ist ein Muster, das Studierende erkennen sollen: Größe ist kein Gütezeich
 
 Mehr ist nur dann mehr, wenn das Mehr auch besser ist. Bei diesem Skill ist das unklar.
 
-## Was der Skill genutzlich macht
+## Was der Skill nützlich macht
 
-Das Matching-Prinzip hat einen echten Nutzen für Prototyping: „Ich baue eine FinTech-App im Minimal-Stil" erzeugt konkrete Vorschläge für Farben, Fonts und Komponenten. Das ist schneller als eine leere Seite. Für explorative Phasen, wo Richtung wichtiger ist als Präzision, kann das genutzlich sein.
+Das Matching-Prinzip hat einen echten Nutzen für Prototyping: „Ich baue eine FinTech-App im Minimal-Stil" erzeugt konkrete Vorschläge für Farben, Fonts und Komponenten. Das ist schneller als eine leere Seite. Für explorative Phasen, wo Richtung wichtiger ist als Präzision, kann das nützlich sein.
 
-Die CSV-Struktur bedeutet ausserdem: Die Datenbank ist transparent einsehbar. Wer die Quellen der 99 Richtlinien selbst validieren will, kann in die Dateien schauen, auch wenn die Richtlinien selbst keine Quellen nennen.
+Die CSV-Struktur bedeutet außerdem: Die Datenbank ist transparent einsehbar. Wer die Quellen der 99 Richtlinien selbst validieren will, kann in die Dateien schauen, auch wenn die Richtlinien selbst keine Quellen nennen.
 
 ## Empfehlung
 

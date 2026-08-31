@@ -10,13 +10,13 @@ last_audited: "8. Juni 2026"
 
 skill_scores:
   methodische_fundierung: 5
-  methodische_fundierung_note: "Apple HIG (2025) als PDF im Repository, Material Design 3 und WCAG 2.2 mit Direktlinks, drei HCI-Publikationen mit verifizierbaren URLs zu archive.org und PMC — methodisch das Sorgfaeltigste im bisher evaluierten Oekosystem"
+  methodische_fundierung_note: "Apple HIG (2025) als PDF im Repository, Material Design 3 und WCAG 2.2 mit Direktlinks, drei HCI-Publikationen mit verifizierbaren URLs zu archive.org und PMC — methodisch das Sorgfältigste im bisher evaluierten Ökosystem"
   transparenz: 4
-  transparenz_note: "Plattformspezifische 'Use when'-Definitionen kommunizieren Scope klar; keine explizite Warnung vor LLM-Grenzen bei formaler Compliance-Pruefung; anonymer Maintainer ohne verifizierbaren Hintergrund"
+  transparenz_note: "Plattformspezifische 'Use when'-Definitionen kommunizieren Scope klar; keine explizite Warnung vor LLM-Grenzen bei formaler Compliance-Prüfung; anonymer Maintainer ohne verifizierbaren Hintergrund"
   validierbarkeit: 4
-  validierbarkeit_note: "92 Commits, CHANGELOG.md, PR-Guidelines fordern Before/After-Beispiele; individuelle rules/-Dateien je Plattform ermoeglichen gezielte Pruefung — aber kein automatisiertes Testframework"
+  validierbarkeit_note: "92 Commits, CHANGELOG.md, PR-Guidelines fordern Before/After-Beispiele; individuelle rules/-Dateien je Plattform ermöglichen gezielte Prüfung — aber kein automatisiertes Testframework"
   wartbarkeit: 3
-  wartbarkeit_note: "MIT-Lizenz, 354 Stars, 20 Forks, aktive Entwicklung mit durchdachten PR-Richtlinien — aber anonymer Einzelmaintainer 'ehmo' ohne veroeffentlichte Identitaet oder Community-Backup"
+  wartbarkeit_note: "MIT-Lizenz, 354 Stars, 20 Forks, aktive Entwicklung mit durchdachten PR-Richtlinien — aber anonymer Einzelmaintainer 'ehmo' ohne veröffentlichte Identität oder Community-Backup"
 
 tags:
   - apple-hig

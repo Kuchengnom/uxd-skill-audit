@@ -10,11 +10,11 @@ last_audited: "20. April 2026"
 
 skill_scores:
   methodische_fundierung: 3
-  methodische_fundierung_note: "Drei real existierende, oeffentlich verifierbare Praktiker als Quellen; Prinzipien plausibel und nachvollziehbar — aber keine direkten Links zu Originalartikeln oder Kursen in den Referenzdateien"
+  methodische_fundierung_note: "Drei real existierende, öffentlich verifizierbare Praktiker als Quellen; Prinzipien plausibel und nachvollziehbar — aber keine direkten Links zu Originalartikeln oder Kursen in den Referenzdateien"
   transparenz: 3
   transparenz_note: "Kontext-Aware-Logik explizit kommuniziert; 'never apply rules blindly' steht im README — aber keine Warnung vor LLM-Grenzen bei visueller Animationsbewertung"
   validierbarkeit: 2
-  validierbarkeit_note: "Hohe Installationszahlen (861/Woche) sind kein Qualitaetsnachweis; keine Testfaelle, keine Before/After-Beispiele, kein Vergleich mit Expertenbewertung dokumentiert"
+  validierbarkeit_note: "Hohe Installationszahlen (861/Woche) sind kein Qualitätsnachweis; keine Testfälle, keine Before/After-Beispiele, kein Vergleich mit Expertenbewertung dokumentiert"
   wartbarkeit: 3
   wartbarkeit_note: "Identifizierbarer Maintainer (Kyle Zantos, aktiv auf X), MIT-Lizenz, Version v1.2.0 vom 16. April 2026 — aber Einzelperson mit 17 Commits insgesamt"
 

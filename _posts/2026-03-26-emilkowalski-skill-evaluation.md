@@ -12,13 +12,13 @@ last_audited: "26. März 2026"
 
 skill_scores:
   methodische_fundierung: 5
-  methodische_fundierung_note: "Jedes Prinzip ist in publizierten Artikeln nachlesbar und unabhaengig pruefbar"
+  methodische_fundierung_note: "Jedes Prinzip ist in publizierten Artikeln nachlesbar und unabhängig prüfbar"
   transparenz: 4
-  transparenz_note: "Explizit als situationsabhaengig deklariert — kein Universalwerkzeug"
+  transparenz_note: "Explizit als situationsabhängig deklariert — kein Universalwerkzeug"
   validierbarkeit: 4
-  validierbarkeit_note: "Quellartikel sind die Testfaelle; Prinzipien an realen Projekten demonstriert"
+  validierbarkeit_note: "Quellartikel sind die Testfälle; Prinzipien an realen Projekten demonstriert"
   wartbarkeit: 4
-  wartbarkeit_note: "Aktiver Maintainer mit verifizierbarer Expertise und oeffentlichem Track-Record"
+  wartbarkeit_note: "Aktiver Maintainer mit verifizierbarer Expertise und öffentlichem Track-Record"
 
 tags:
   - motion

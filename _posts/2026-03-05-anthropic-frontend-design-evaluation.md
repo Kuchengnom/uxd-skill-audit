@@ -13,13 +13,13 @@ last_audited: "5. März 2026"
 
 skill_scores:
   methodische_fundierung: 3
-  methodische_fundierung_note: "Aesthetisch durchdacht, aber kein UX-Fundament"
+  methodische_fundierung_note: "Ästhetisch durchdacht, aber kein UX-Fundament"
   transparenz: 2
   transparenz_note: "Kommuniziert nicht, was Claude epistemisch nicht leisten kann"
   validierbarkeit: 3
-  validierbarkeit_note: "Oeffentliches Repo mit PR-Prozess — Fehler werden korrigiert"
+  validierbarkeit_note: "Öffentliches Repo mit PR-Prozess — Fehler werden korrigiert"
   wartbarkeit: 5
-  wartbarkeit_note: "Maintainer ist Anthropic selbst — bestmoegliche Wartungsgarantie"
+  wartbarkeit_note: "Maintainer ist Anthropic selbst — bestmögliche Wartungsgarantie"
 
 tags:
   - anthropic
@@ -35,7 +35,7 @@ Das ist der Skill, dem am meisten vertraut wird, weil Anthropic dahintersteht. D
 
 Der offizielle `frontend-design`-Skill von Anthropic generiert „distinctive, production-grade frontend interfaces". Er etabliert vor dem Coden einen Designrahmen: Zweck, Zielgruppe und ästhetische Richtung, also brutalist, maximalist, retro-futuristic, luxury oder playful. Er verbannt explizit generische AI-Ästhetik: keine overused Fonts wie Inter, Roboto und Arial, keine clichéhaften Farbschemata und vor allem kein Purple-Gradient auf Weiß, keine vorhersehbaren Layouts.
 
-Das Ziel ist klar formuliert und das Framework-Agnostik ist korrekt. Für einen schnellen Ausgangspunkt für Frontend-Arbeit ist das genutzlich.
+Das Ziel ist klar formuliert und das Framework-Agnostik ist korrekt. Für einen schnellen Ausgangspunkt für Frontend-Arbeit ist das nützlich.
 
 ## Der fundamentale Denkfehler
 
@@ -52,7 +52,7 @@ Das ist kein kleines Versehen. Es zeigt ein Missverständnis darüber wie LLMs f
 
 Offizielle Skills sind nicht per se korrekt. Anthropic hat eine bessere Wartungsinfrastruktur als die meisten Community-Maintainer. Aber auch Anthropics Skill-Team hat blinde Flecken, die externe Reviews aufdecken. Das öffentliche Repo mit PR-Prozess ist hier ein echter Vorteil: Fehler werden sichtbar und korrigiert.
 
-Anweisungen müssen ausserdem mit den Fähigkeiten des Modells übereinstimmen. Eine SKILL.md ist kein Wunschzettel, sie ist ein Prompt. Und Prompts die auf Informationen referenzieren, die das Modell nicht haben kann, erzeugen Verhalten das unvorhersehbar ist oder still ignoriert wird.
+Anweisungen müssen außerdem mit den Fähigkeiten des Modells übereinstimmen. Eine SKILL.md ist kein Wunschzettel, sie ist ein Prompt. Und Prompts die auf Informationen referenzieren, die das Modell nicht haben kann, erzeugen Verhalten das unvorhersehbar ist oder still ignoriert wird.
 
 Und schließlich: Ästhetik-Verbote sind kein Usability-Rahmen. Auch dieser offizielle Skill adressiert keine Usability-Fragen, keine Cognitive Load, keine Accessibility jenseits von erwähnenswerten Randnotizen. Die Frage „Wird dieses Interface von seinen Nutzern verstanden?" taucht nicht auf.
 

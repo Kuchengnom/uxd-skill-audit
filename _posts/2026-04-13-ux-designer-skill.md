@@ -10,13 +10,13 @@ last_audited: "13. April 2026"
 
 skill_scores:
   methodische_fundierung: 3
-  methodische_fundierung_note: "19 real existierende und anerkannte Quellen namentlich genannt; ob sie korrekt in die 24 Referenzdateien portiert wurden, ist ohne direkten Repository-Zugang nicht pruefbar"
+  methodische_fundierung_note: "19 real existierende und anerkannte Quellen namentlich genannt; ob sie korrekt in die 24 Referenzdateien portiert wurden, ist ohne direkten Repository-Zugang nicht prüfbar"
   transparenz: 2
-  transparenz_note: "Breites 'comprehensive'-Versprechen kombiniert mit automatischem Ausloeser ohne explizite Grenzkommunikation gegenueber LLM-Limitationen"
+  transparenz_note: "Breites 'comprehensive'-Versprechen kombiniert mit automatischem Auslöser ohne explizite Grenzkommunikation gegenüber LLM-Limitationen"
   validierbarkeit: 3
-  validierbarkeit_note: "24 Referenzdateien mit ~10.700 Zeilen belegen strukturellen Aufwand; keine Testfaelle, Referenz-Outputs oder Before/After-Beispiele dokumentiert"
+  validierbarkeit_note: "24 Referenzdateien mit ~10.700 Zeilen belegen strukturellen Aufwand; keine Testfälle, Referenz-Outputs oder Before/After-Beispiele dokumentiert"
   wartbarkeit: 2
-  wartbarkeit_note: "Einzelner Maintainer Szilard Hajba; keine oeffentliche Community-Diskussion, kein Aktivitaetssignal, Lizenz nicht bestaetigt auffindbar"
+  wartbarkeit_note: "Einzelner Maintainer Szilard Hajba; keine öffentliche Community-Diskussion, kein Aktivitätssignal, Lizenz nicht bestätigt auffindbar"
 
 tags:
   - quellennachweis

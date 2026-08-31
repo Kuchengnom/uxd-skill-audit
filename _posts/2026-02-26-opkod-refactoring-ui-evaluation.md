@@ -14,9 +14,9 @@ skill_scores:
   methodische_fundierung: 3
   methodische_fundierung_note: "Refactoring UI ist ein legitimes Buch — aber nur Tailwind/shadcn portiert"
   transparenz: 2
-  transparenz_note: "Keine Kommunikation der Framework-Abhaengigkeit oder Grenzen"
+  transparenz_note: "Keine Kommunikation der Framework-Abhängigkeit oder Grenzen"
   validierbarkeit: 1
-  validierbarkeit_note: "Keine Testfaelle, keine ausfuehrbaren Werkzeuge"
+  validierbarkeit_note: "Keine Testfälle, keine ausführbaren Werkzeuge"
   wartbarkeit: 1
   wartbarkeit_note: "Archiviert am 24. Feb. 2026 — kein aktiver Maintainer mehr"
 

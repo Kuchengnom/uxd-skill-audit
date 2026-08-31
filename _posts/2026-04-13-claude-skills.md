@@ -10,11 +10,11 @@ last_audited: "13. April 2026"
 
 skill_scores:
   methodische_fundierung: 4
-  methodische_fundierung_note: "Anerkannte Standards korrekt benannt; Portierungstiefe ohne direkten Quellzugang nicht vollstaendig pruefbar"
+  methodische_fundierung_note: "Anerkannte Standards korrekt benannt; Portierungstiefe ohne direkten Quellzugang nicht vollständig prüfbar"
   transparenz: 3
-  transparenz_note: "Skill-Kombinationshinweise vorhanden, aber fundamentale LLM-Grenzen bei Compliance-Pruefung bleiben unbenannt"
+  transparenz_note: "Skill-Kombinationshinweise vorhanden, aber fundamentale LLM-Grenzen bei Compliance-Prüfung bleiben unbenannt"
   validierbarkeit: 3
-  validierbarkeit_note: "OWASP-Skill strukturiert mit 44 Testfaellen; UX-Evaluation-Skills ohne ueberprueifbare Referenzoutputs"
+  validierbarkeit_note: "OWASP-Skill strukturiert mit 44 Testfällen; UX-Evaluation-Skills ohne überprüfbare Referenzoutputs"
   wartbarkeit: 3
   wartbarkeit_note: "Einzelner Maintainer mit verifizierbarem Software-Hintergrund; aktiv per Februar 2026, Lizenzstatus unklar"
 
@@ -24,7 +24,7 @@ tags:
   - ai-governance
   - owasp
   - positives-beispiel
-  - domainkomplexitaet
+  - domainkomplexität
   - skill-evaluation
 ---
 

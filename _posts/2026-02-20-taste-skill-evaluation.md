@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "taste-skill: Wenn Aesthetik-Praeferenzen als Design-Methodik verkleidet werden"
+title: "taste-skill: Wenn Ästhetik-Präferenzen als Design-Methodik verkleidet werden"
 date: 2026-02-20
 category: Skill-Evaluation
 skill_reviewed: "Leonxlnx/taste-skill"
@@ -12,17 +12,17 @@ last_audited: "20. Februar 2026"
 
 skill_scores:
   methodische_fundierung: 2
-  methodische_fundierung_note: "Keine anerkannte UX-Methodik — reine Aesthetikpraeferenzen"
+  methodische_fundierung_note: "Keine anerkannte UX-Methodik — reine Ästhetikpräferenzen"
   transparenz: 2
   transparenz_note: "Kommuniziert nicht, dass Outputs keine Usability-Grundlage haben"
   validierbarkeit: 2
-  validierbarkeit_note: "Keine Testfaelle, kein Vergleich mit Nutzertests"
+  validierbarkeit_note: "Keine Testfälle, kein Vergleich mit Nutzertests"
   wartbarkeit: 4
   wartbarkeit_note: "Aktiv gepflegt, eigene Domain, mehrere Varianten"
 
 tags:
   - frontend
-  - aesthetik
+  - ästhetik
   - kritik
   - skill-evaluation
 ---

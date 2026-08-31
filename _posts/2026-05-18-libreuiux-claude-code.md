@@ -20,7 +20,7 @@ skill_scores:
 
 tags:
   - scope-inflation
-  - quantitaet-vs-qualitaet
+  - quantität-vs-qualität
   - methodische-leerstelle
   - prompt-engineering
   - designsysteme

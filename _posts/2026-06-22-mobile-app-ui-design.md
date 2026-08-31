@@ -22,7 +22,7 @@ tags:
   - quellenarbeit
   - mobile-design
   - peak-end-rule
-  - ueberpruefbarkeit
+  - überprüfbarkeit
   - skill-evaluation
 ---
 

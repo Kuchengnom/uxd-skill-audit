@@ -19,7 +19,7 @@ skill_scores:
   wartbarkeit_note: "Anonyme Organisation 'Design Tribe Republic', keine Releases, keine Aktivität nach dem initialen Push; MIT-Lizenz vorhanden, aber ohne aktive Entwicklung praktisch wertlos."
 
 tags:
-  - quantitaet-vs-qualitaet
+  - quantität-vs-qualität
   - selbstreferenz
   - ki-generierter-inhalt
   - marketing-sprache

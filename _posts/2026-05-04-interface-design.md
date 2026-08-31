@@ -7,6 +7,7 @@ skill_reviewed: "Dammyjay93/interface-design"
 verdict: vertrauen
 reading_time: 8
 last_audited: "04. Mai 2026"
+superseded_by: /2026/06/08/interface-design/
 
 skill_scores:
   methodische_fundierung: 3
@@ -27,6 +28,11 @@ tags:
   - stateless-ki
   - system-md
 ---
+
+<div class="callout">
+<div class="callout__title">Überholt — es gibt eine neuere Evaluation dieses Skills</div>
+Diese Fassung vom 4. Mai 2026 ist der historische Stand. Am 8. Juni wurde der Skill erneut geprüft und dabei die methodische Fundierung von 3 auf 2 korrigiert, wodurch das Urteil von <code>vertrauen</code> auf <code>vorsicht</code> wechselt. Grund war kein neuer Befund, sondern eine falsche Anwendung des eigenen Bewertungsrahmens: Der Wert 3 setzt vorhandene, wenn auch lückenhafte Quellen voraus — dieser Skill nennt keine. Maßgeblich ist daher das <a href="{{ '/2026/06/08/interface-design/' | relative_url }}">Re-Audit vom 8. Juni 2026</a>.
+</div>
 
 `Dammyjay93/interface-design` hat sich seit seinem Start als `claude-design-skill` zu einem der meistgenutzten Claude-Code-Plugins im Designbereich entwickelt: knapp 4.600 GitHub-Stars und 316 Forks (Stand Mai 2026). Hinter dem Projekt steht Oyindamola Akinleye, eine Designerin mit eigenem Website-Auftritt unter [interface-design.dev](https://interface-design.dev) und nachweisbarem Practitioner-Hintergrund. Der Skill verspricht drei Dinge gleichzeitig: **Handwerk** (Craft), **Gedächtnis** (Memory) und **Konsistenz** (Consistency) — für Dashboards, Admin-Panels, Apps und Tools, ausdrücklich nicht für Marketing-Seiten.
 

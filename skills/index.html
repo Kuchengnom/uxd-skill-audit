@@ -19,7 +19,9 @@ permalink: /skills/
 <div class="page-section">
   <div class="container">
 
-    {% assign evaluated = site.posts | where_exp: "post", "post.skill_reviewed" %}
+    {% comment %} Überholte Evaluationen bleiben erreichbar, erscheinen hier aber nicht — sonst
+       stünde derselbe Skill mit zwei verschiedenen Urteilen in zwei Gruppen. {% endcomment %}
+    {% assign evaluated = site.posts | where_exp: "post", "post.skill_reviewed" | where_exp: "post", "post.superseded_by == nil" %}
     {% assign sorted = evaluated | sort: "verdict" %}
 
     {% comment %} Gruppierung nach Urteil {% endcomment %}

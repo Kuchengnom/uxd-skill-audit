@@ -27,61 +27,61 @@ tags:
   - skill-evaluation
 ---
 
-Die bisherigen Posts dieses Blogs haben Luecken beschrieben: fehlende Quellenangaben, epistemisch unerfuellbare Anweisungen, archivierte Repos, Datenbanken die als Methodik durchgehen. Dieser Post beschreibt das Gegenteil.
+Die bisherigen Posts dieses Blogs haben Lücken beschrieben: fehlende Quellenangaben, epistemisch unerfüllbare Anweisungen, archivierte Repos, Datenbanken die als Methodik durchgehen. Dieser Post beschreibt das Gegenteil.
 
 ## Wer Emil Kowalski ist, und warum das relevant ist
 
-Bevor der Skill bewertet wird, muss der Autor bewertet werden. Das klingt nach einem Ad-hominem-Argument, ist aber beim Skill-Oekosystem strukturell notwendig: Ein Skill ist destilliertes Urteilsvermoegen. Wessen Urteil steckt drin?
+Bevor der Skill bewertet wird, muss der Autor bewertet werden. Das klingt nach einem Ad-hominem-Argument, ist aber beim Skill-Ökosystem strukturell notwendig: Ein Skill ist destilliertes Urteilsvermögen. Wessen Urteil steckt drin?
 
-Emil Kowalski ist Design Engineer bei Linear, vorher Vercel. Er ist Autor der Open-Source-Bibliotheken Sonner fuer Toast-Benachrichtigungen und Vaul fuer Drawer-Komponenten, und Kursersteller bei [animations.dev](https://animations.dev). Seine Arbeit ist in Production-Produkten, die Millionen von Nutzern taeglich verwenden. Das ist verifizierbarer Track-Record, keine Selbstbeschreibung.
+Emil Kowalski ist Design Engineer bei Linear, vorher Vercel. Er ist Autor der Open-Source-Bibliotheken Sonner für Toast-Benachrichtigungen und Vaul für Drawer-Komponenten, und Kursersteller bei [animations.dev](https://animations.dev). Seine Arbeit ist in Production-Produkten, die Millionen von Nutzern täglich verwenden. Das ist verifizierbarer Track-Record, keine Selbstbeschreibung.
 
-Das spielt fuer die erste Dimension eine entscheidende Rolle.
+Das spielt für die erste Dimension eine entscheidende Rolle.
 
 ## Was die `/skill`-Seite anders macht
 
-Der Einstieg zu diesem Skill ist nicht ein GitHub-README. Es ist eine eigene Seite auf seiner persoenlichen Website, die erklaert was der Skill ist, woher er kommt, und vor allem wie man ihn richtig einsetzt.
+Der Einstieg zu diesem Skill ist nicht ein GitHub-README. Es ist eine eigene Seite auf seiner persönlichen Website, die erklärt was der Skill ist, woher er kommt, und vor allem wie man ihn richtig einsetzt.
 
-Emil empfiehlt explizit: Den Skill **situationsabhaengig einsetzen**, nicht als permanente Hintergrundkonfiguration. Diese einfache Formulierung kommuniziert eine Grenze, die die meisten anderen Skills stillschweigend ignorieren. Er sagt damit: Ich weiss was dieser Skill kann, und ich weiss was er nicht kann. Du solltest das auch wissen.
+Emil empfiehlt explizit: Den Skill **situationsabhängig einsetzen**, nicht als permanente Hintergrundkonfiguration. Diese einfache Formulierung kommuniziert eine Grenze, die die meisten anderen Skills stillschweigend ignorieren. Er sagt damit: Ich weiß was dieser Skill kann, und ich weiß was er nicht kann. Du solltest das auch wissen.
 
 ## Warum methodische Nachvollziehbarkeit hier funktioniert
 
 <div class="callout">
-<div class="callout__title">Das Kernprinzip guter Skill-Qualitaet</div>
-Ein Skill dessen Prinzipien unabhaengig von ihm selbst lesbar, pruefbar und diskutierbar sind, ist ein Skill dem man vertrauen kann.
+<div class="callout__title">Das Kernprinzip guter Skill-Qualität</div>
+Ein Skill dessen Prinzipien unabhängig von ihm selbst lesbar, prüfbar und diskutierbar sind, ist ein Skill dem man vertrauen kann.
 </div>
 
-Emils SKILL.md ist aus den Artikeln auf seinem Blog destilliert. Das bedeutet: Jedes Prinzip hat eine Quelle. Wer wissen will warum er `clip-path` als bevorzugtes Animations-Primitiv empfiehlt, liest den dazugehoerigen Artikel. Wer wissen will warum er Animationen unter 300ms haelt und Raycast als Beispiel nennt fuer eine App die besser ohne Animation funktioniert, findet die Begruendung.
+Emils SKILL.md ist aus den Artikeln auf seinem Blog destilliert. Das bedeutet: Jedes Prinzip hat eine Quelle. Wer wissen will warum er `clip-path` als bevorzugtes Animations-Primitiv empfiehlt, liest den dazugehörigen Artikel. Wer wissen will warum er Animationen unter 300ms hält und Raycast als Beispiel nennt für eine App die besser ohne Animation funktioniert, findet die Begründung.
 
-Das ist der Unterschied zwischen einem Skill der *behauptet* und einem Skill der *argumentiert*. Die Behauptung ist nicht pruefbar. Das Argument ist es.
+Das ist der Unterschied zwischen einem Skill der *behauptet* und einem Skill der *argumentiert*. Die Behauptung ist nicht prüfbar. Das Argument ist es.
 
-Zum Vergleich: Die 99 UX-Richtlinien in `ui-ux-pro-max` haben keine einzige Quellenangabe. Beide Skills machen Aussagen ueber gutes Design. Nur einer davon zeigt die Arbeit.
+Zum Vergleich: Die 99 UX-Richtlinien in `ui-ux-pro-max` haben keine einzige Quellenangabe. Beide Skills machen Aussagen über gutes Design. Nur einer davon zeigt die Arbeit.
 
-## Was der Skill tatsaechlich abdeckt
+## Was der Skill tatsächlich abdeckt
 
-Der Scope ist klar und ehrlich: **UI-Animation und Design Engineering**. Nicht Usability, nicht Nutzerforschung, nicht Accessibility-Compliance. Behandelt werden Animations-Timing unter 300ms, Spring-Parameter, die kontextabhaengige Entscheidung ob ueberhaupt animiert wird, und Performance-Ueberlegungen wie CSS statt JavaScript fuer kritische Pfade.
+Der Scope ist klar und ehrlich: **UI-Animation und Design Engineering**. Nicht Usability, nicht Nutzerforschung, nicht Accessibility-Compliance. Behandelt werden Animations-Timing unter 300ms, Spring-Parameter, die kontextabhängige Entscheidung ob überhaupt animiert wird, und Performance-Überlegungen wie CSS statt JavaScript für kritische Pfade.
 
-Das ist wenig im Vergleich zu Skills die „344+ Design-Ressourcen" oder „26 Rollen und 60 Befehle" versprechen. Aber es ist wenig was vollstaendig ist. Ein klar abgegrenzter Skill mit Tiefe ist wertvoller als ein breiter Skill ohne Boden.
+Das ist wenig im Vergleich zu Skills die „344+ Design-Ressourcen" oder „26 Rollen und 60 Befehle" versprechen. Aber es ist wenig was vollständig ist. Ein klar abgegrenzter Skill mit Tiefe ist wertvoller als ein breiter Skill ohne Boden.
 
 ## Was noch fehlt, auch hier
 
 Ein perfekter Score wird nicht vergeben, weil er nicht verdient ist. Zwei Punkte bleiben offen:
 
-**Accessibility**: `prefers-reduced-motion` wird im Skill erwaehnt, aber nicht als systematische Anforderung behandelt. Animationen die fuer den durchschnittlichen Nutzer „inevitable and natural" wirken, koennen fuer Nutzer mit vestibularen Stoerungen problematisch sein. Das verdient mehr als eine Randnotiz.
+**Accessibility**: `prefers-reduced-motion` wird im Skill erwähnt, aber nicht als systematische Anforderung behandelt. Animationen die für den durchschnittlichen Nutzer „inevitable and natural" wirken, können für Nutzer mit vestibularen Störungen problematisch sein. Das verdient mehr als eine Randnotiz.
 
-**Formale Testfaelle**: Die Quellartikel sind die de-facto-Referenz, aber es gibt keine strukturierten Erwartungen nach dem Muster Input X ergibt Output Y, die pruefbar waeren. Das ist kein schwerwiegender Mangel fuer diesen Skill-Typ, aber es ist eine Grenze.
+**Formale Testfälle**: Die Quellartikel sind die de-facto-Referenz, aber es gibt keine strukturierten Erwartungen nach dem Muster Input X ergibt Output Y, die prüfbar wären. Das ist kein schwerwiegender Mangel für diesen Skill-Typ, aber es ist eine Grenze.
 
-## Was Studierende hier lernen koennen
+## Was Studierende hier lernen können
 
 Dieser Skill zeigt konkret was die vier Dimensionen des Bewertungsrahmens in der Praxis bedeuten:
 
-Methodische Fundierung ist nicht die Menge der enthaltenen Regeln, sondern die Nachvollziehbarkeit der Begruendungen dahinter.
+Methodische Fundierung ist nicht die Menge der enthaltenen Regeln, sondern die Nachvollziehbarkeit der Begründungen dahinter.
 
-Transparenz ist nicht der Disclaimer am Ende. Es ist die Art wie der Skill sich selbst beschreibt: als situationsabhaengiges Werkzeug, nicht als universelle Loesung.
+Transparenz ist nicht der Disclaimer am Ende. Es ist die Art wie der Skill sich selbst beschreibt: als situationsabhängiges Werkzeug, nicht als universelle Lösung.
 
-Validierbarkeit ist nicht das Vorhandensein von Beispielen. Es ist die Moeglichkeit, die Prinzipien unabhaengig vom Skill selbst zu ueberpruefen: durch Quellartikel, reale Projekte, nachvollziehbare Argumentation.
+Validierbarkeit ist nicht das Vorhandensein von Beispielen. Es ist die Möglichkeit, die Prinzipien unabhängig vom Skill selbst zu überprüfen: durch Quellartikel, reale Projekte, nachvollziehbare Argumentation.
 
-Wartbarkeit ist nicht Anzahl der Commits. Es ist ein Maintainer mit verifizierbarem Urteilsvermoegen und Haut im Spiel.
+Wartbarkeit ist nicht Anzahl der Commits. Es ist ein Maintainer mit verifizierbarem Urteilsvermögen und Haut im Spiel.
 
 ---
 
-Dieser Skill erfuellt alle vier Dimensionen mit Abstrichen in Accessibility-Tiefe und formaler Testbarkeit. Das reicht fuer das hoechste Urteil in diesem Blog. Nicht weil er perfekt ist, sondern weil er zeigt was ein solider Skill strukturell leisten muss.
+Dieser Skill erfüllt alle vier Dimensionen mit Abstrichen in Accessibility-Tiefe und formaler Testbarkeit. Das reicht für das höchste Urteil in diesem Blog. Nicht weil er perfekt ist, sondern weil er zeigt was ein solider Skill strukturell leisten muss.

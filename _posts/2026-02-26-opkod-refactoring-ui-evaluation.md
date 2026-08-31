@@ -33,7 +33,7 @@ Dieser Skill wurde archiviert, kurz bevor dieser Post erschienen ist. Das ist ke
 
 `claude-skill-refactoring-ui` von OPKOD France wendete Prinzipien aus dem Buch *Refactoring UI* von Adam Wathan und Steve Schoger auf Tailwind CSS und shadcn/ui an. Das Skill aktivierte automatisch bei UI-Aufgaben: Settings-Seiten mit Formularen, Dashboard-Layouts, Komponenten die "professioneller" aussehen sollen.
 
-Die Quelle ist unbestreitbar solide. *Refactoring UI* gilt als eines der wenigen Design-Bücher, das von Entwicklern tatsaechlich gelesen und angewendet wird. Die Prinzipien sind gut begruendet und praxiserprobt: Weissraum vor Schatten, Hierarchie durch Groesse statt Farbe, Raender reduzieren.
+Die Quelle ist unbestreitbar solide. *Refactoring UI* gilt als eines der wenigen Design-Bücher, das von Entwicklern tatsächlich gelesen und angewendet wird. Die Prinzipien sind gut begründet und praxiserprobt: Weißraum vor Schatten, Hierarchie durch Größe statt Farbe, Ränder reduzieren.
 
 ## Das Problem mit der Portierung
 
@@ -50,13 +50,13 @@ Hinzu kommt: Das Buch behandelt visuelle Hierarchie, Farbsysteme und Spacing. Es
 
 Am 24. Februar 2026 wurde das Repo archiviert und auf `opkod-france/opkod-claude-code-plugins` weitergeleitet. Dieses Monorepo erlaubt Maintainern, mehrere Skills unter einem Dach zu verwalten.
 
-Das ist organisatorisch sinnvoll. Fuer Nutzer ist es ein Problem:
+Das ist organisatorisch sinnvoll. Für Nutzer ist es ein Problem:
 
 Wer heute das alte Repo findet, über einen Blog-Post, einen Reddit-Thread oder eine Kurs-Empfehlung, installiert einen archivierten Skill ohne aktive Wartung. Es gibt kein automatisches Update, keine Deprecation-Warnung im Skill selbst, keine Weiterleitung in der SKILL.md.
 
-Das ist das fundamentale Wartungsproblem des Skill-Oekosystems: Skills werden nicht deinstalliert, sie verstauben still.
+Das ist das fundamentale Wartungsproblem des Skill-Ökosystems: Skills werden nicht deinstalliert, sie verstauben still.
 
-## Was das fuer Studierende bedeutet
+## Was das für Studierende bedeutet
 
 Drei Fragen die man stellen sollte, *bevor* man einen Skill installiert:
 
@@ -66,6 +66,6 @@ Drei Fragen die man stellen sollte, *bevor* man einen Skill installiert:
 
 ## Fazit
 
-Der Skill hatte eine solide Grundlage und ein echtes Problem. Die Quelle war gut gewählt. Aber die Portierung war framework-gebunden ohne das zu kommunizieren, es gab keine Testfaelle, und das Projekt ist nun archiviert. Fuer den Einsatz heute gibt es keinen triftigen Grund mehr.
+Der Skill hatte eine solide Grundlage und ein echtes Problem. Die Quelle war gut gewählt. Aber die Portierung war framework-gebunden ohne das zu kommunizieren, es gab keine Testfälle, und das Projekt ist nun archiviert. Für den Einsatz heute gibt es keinen triftigen Grund mehr.
 
 Wer Refactoring-UI-Prinzipien in Claude einbringen will, ist mit einem eigenen, gut dokumentierten CLAUDE.md-Abschnitt besser bedient als mit einem archivierten Skill eines unbekannten Drittanbieters.

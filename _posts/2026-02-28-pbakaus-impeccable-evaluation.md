@@ -31,7 +31,7 @@ Der meistdiskutierte Skill der letzten Wochen, 10.000 GitHub-Stars in drei Woche
 
 ## Paul Bakaus: Das Fundament stimmt
 
-Das müssen wir zuerst klären: Paul Bakaus ist nicht irgendein Designer mit einem Domain-Namen. Ex-Google, Mitautor von Raycast, jener App in der viele von uns täglich leben, Redner auf internationalen Konferenzen. Das ist Urteilsvermoegen das verifizierbar ist.
+Das müssen wir zuerst klären: Paul Bakaus ist nicht irgendein Designer mit einem Domain-Namen. Ex-Google, Mitautor von Raycast, jener App in der viele von uns täglich leben, Redner auf internationalen Konferenzen. Das ist Urteilsvermögen das verifizierbar ist.
 
 Und ja, impeccable.style ist *seine* Domain, nicht ein Repository mit marketingartigem Namen. Das zählt.
 

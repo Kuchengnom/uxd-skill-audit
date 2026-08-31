@@ -27,11 +27,11 @@ tags:
   - skill-evaluation
 ---
 
-Der taste-skill von Leon Lin ist viral gegangen — eigene Domain, sieben Varianten, Tessl-Registry-Eintrag. Er loest ein echtes Problem: KI-generiertes Frontend sieht zu oft gleich aus. Und dennoch lohnt es sich, genau hinzuschauen was hier eigentlich behauptet wird.
+Der taste-skill von Leon Lin ist viral gegangen: eigene Domain, sieben Varianten, Tessl-Registry-Eintrag. Er loest ein echtes Problem, denn KI-generiertes Frontend sieht zu oft gleich aus. Und dennoch lohnt es sich, genau hinzuschauen was hier eigentlich behauptet wird.
 
 ## Was der Skill tut
 
-taste-skill gibt Claude einen aesthetischen Rahmen fuer Frontend-Entwicklung. Das 3-Dial-System — `DESIGN_VARIANCE` (1–10), `MOTION_INTENSITY` (1–10), `VISUAL_DENSITY` (1–10) — klingt nach kontrollierter Parametrisierung. Die SKILL.md-Datei bannt konkrete Muster explizit: keine "3 gleich breiten Feature-Cards", kein "AI-Purple", keine isolierten Dark-Sections in Light-Mode-Pages.
+taste-skill gibt Claude einen aesthetischen Rahmen fuer Frontend-Entwicklung. Das 3-Dial-System klingt nach kontrollierter Parametrisierung: `DESIGN_VARIANCE`, `MOTION_INTENSITY` und `VISUAL_DENSITY`, jeweils auf einer Skala von 1 bis 10. Die SKILL.md-Datei bannt konkrete Muster explizit: keine „3 gleich breiten Feature-Cards", kein „AI-Purple", keine isolierten Dark-Sections in Light-Mode-Pages.
 
 Das Prinzip ist klar: Statt vage zu sagen "sei kreativ", gibt der Skill Anti-Pattern-Regeln vor. Claude weiss was verboten ist und weicht statistischen Mittelpunkten aus.
 
@@ -42,9 +42,9 @@ Das Prinzip ist klar: Statt vage zu sagen "sei kreativ", gibt der Skill Anti-Pat
 Der Skill loest ein Aesthetik-Problem, nicht ein Usability-Problem. Diese Unterscheidung fehlt komplett.
 </div>
 
-"Slop" — das generische Einerlei der KI-generierten UIs — ist ein legitimes Problem. Aber taste-skill ersetzt einen statistischen Mittelpunkt durch einen anderen: den "Premium Soft UI"-Stil mit teueren Fonts, viel Whitespace, Spring-Animationen und subtilen Schatten. Das ist 2024er Saas-Aesthetik als Dogma.
+„Slop", das generische Einerlei der KI-generierten UIs, ist ein legitimes Problem. Aber taste-skill ersetzt einen statistischen Mittelpunkt durch einen anderen: den „Premium Soft UI"-Stil mit teueren Fonts, viel Whitespace, Spring-Animationen und subtilen Schatten. Das ist 2024er Saas-Aesthetik als Dogma.
 
-Die Fragen, die ein UX-Rahmen beantworten muesste — Ist dieses Interface fuer seine Zielgruppe verstaendlich? Reduziert es kognitive Last? Ist es zugaenglich? — beantwortet der Skill nicht. Er beantwortet: Sieht es nach einem teuren Produkt aus?
+Ein UX-Rahmen muesste andere Fragen beantworten. Ist dieses Interface fuer seine Zielgruppe verstaendlich? Reduziert es kognitive Last? Ist es zugaenglich? Keine davon beantwortet der Skill. Er beantwortet eine einzige: Sieht es nach einem teuren Produkt aus?
 
 Beides sind legitime Fragen. Aber sie sind nicht dieselbe Frage.
 
@@ -56,13 +56,13 @@ Wer taste-skill ohne Kontext einsetzt, lernt:
 - Dass Muster-Verbote = Methodik
 - Dass "Premium" = nutzerzentriert
 
-Keines davon stimmt. Ein hoher `DESIGN_VARIANCE`-Wert produziert interessantere Layouts — aber interessant und verstaendlich sind verschiedene Achsen. Viel Whitespace hilft manchen Nutzern, ueberfordert andere. Spring-Animationen koennen bei kognitiver Belastung oder vestibularen Stoerungen schaedlich sein.
+Keines davon stimmt. Ein hoher `DESIGN_VARIANCE`-Wert produziert interessantere Layouts. Aber interessant und verstaendlich sind verschiedene Achsen. Viel Whitespace hilft manchen Nutzern, ueberfordert andere. Spring-Animationen koennen bei kognitiver Belastung oder vestibularen Stoerungen schaedlich sein.
 
-Der Skill enthaelt keine `prefers-reduced-motion`-Logik. Das WCAG-Kriterium 2.3.3 (Animation from Interactions) wird nicht erwaehnt.
+Der Skill enthaelt keine `prefers-reduced-motion`-Logik. Das WCAG-Kriterium 2.3.3 Animation from Interactions wird nicht erwaehnt.
 
 ## Was der Skill gut macht
 
-Das ist keine vollstaendige Ablehnung. Der Anti-Pattern-Ansatz — explizite Verbote statt vager Ermutigungen — ist didaktisch wertvoll. Die Framework-Agnostik ist korrekt umgesetzt. Und das Problem, das der Skill loest (KI-Output sieht zu gleich aus), ist real.
+Das ist keine vollstaendige Ablehnung. Der Anti-Pattern-Ansatz ist didaktisch wertvoll: explizite Verbote statt vager Ermutigungen. Die Framework-Agnostik ist korrekt umgesetzt. Und das Problem, das der Skill loest, ist real. KI-Output sieht zu gleich aus.
 
 Fuer Prototyping und explorative Designphasen, wo Aesthetik vor Usability rangiert, ist taste-skill ein nuetzliches Werkzeug.
 
@@ -78,10 +78,10 @@ Nach dem Anwenden von taste-skill:
 4. Frage: Ist jede Design-Entscheidung auch fuer Erstbenutzer verstaendlich?
 ```
 
-Die Aesthetik-Entscheidungen des Skills koennen als Ausgangspunkt dienen — aber sie ersetzen keine Usability-Pruefung.
+Die Aesthetik-Entscheidungen des Skills koennen als Ausgangspunkt dienen. Sie ersetzen aber keine Usability-Pruefung.
 
 ## Fazit
 
-taste-skill ist ein ehrliches Aesthetik-Werkzeug, das sich nicht als UX-Methodik verkleidet — aber auch nicht kommuniziert, was es *nicht* ist. Fuer fortgeschrittene Nutzer mit UX-Grundkenntnissen ist das kein Problem. Fuer Studierende, die lernen sollen was Design-Qualitaet bedeutet, fehlt genau dieser Kontext.
+taste-skill ist ein ehrliches Aesthetik-Werkzeug, das sich nicht als UX-Methodik verkleidet. Es kommuniziert aber auch nicht, was es *nicht* ist. Fuer fortgeschrittene Nutzer mit UX-Grundkenntnissen ist das kein Problem. Fuer Studierende, die lernen sollen was Design-Qualitaet bedeutet, fehlt genau dieser Kontext.
 
 Empfehlung: Einsetzen mit expliziter Erg&auml;nzung durch einen Accessibility-Audit-Skill. Nie allein als Qualitaetsmerkmal verwenden.

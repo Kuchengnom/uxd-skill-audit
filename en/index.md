@@ -27,12 +27,13 @@ lang_url: /
               src="https://opengraph.githubassets.com/1/{{ skill_owner }}/{{ skill_repo }}"
               alt="{{ post.skill_reviewed }} GitHub preview"
               loading="lazy"
+              decoding="async"
               onerror="this.parentElement.classList.add('post-list-item__thumb--fallback'); this.src='https://github.com/{{ skill_owner }}.png?size=96';"
             >
           </div>
         {% elsif post.skill_image %}
           <div class="post-list-item__thumb">
-            <img src="{{ post.skill_image }}" alt="{{ post.title }}" loading="lazy">
+            <img src="{{ post.skill_image }}" alt="{{ post.title }}" loading="lazy" decoding="async">
           </div>
         {% else %}
           <div class="post-list-item__thumb post-list-item__thumb--placeholder"></div>

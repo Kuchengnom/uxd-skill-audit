@@ -29,10 +29,10 @@
 {% assign v_raw = s.validierbarkeit        | default: 0 %}
 {% assign w_raw = s.wartbarkeit            | default: 0 %}
 
-{% assign m_r = m_raw | times: 176 | divided_by: 100 %}
-{% assign t_r = t_raw | times: 176 | divided_by: 100 %}
-{% assign v_r = v_raw | times: 176 | divided_by: 100 %}
-{% assign w_r = w_raw | times: 176 | divided_by: 100 %}
+{% assign m_r = m_raw | times: 17.6 %}
+{% assign t_r = t_raw | times: 17.6 %}
+{% assign v_r = v_raw | times: 17.6 %}
+{% assign w_r = w_raw | times: 17.6 %}
 
 {% comment %} Polygon-Punkte: Oben, Rechts, Unten, Links {% endcomment %}
 {% assign p_top_y    = 120 | minus: m_r %}
@@ -49,7 +49,7 @@
 
 {% if is_mini %}
 <svg class="radar-chart radar-chart--mini"
-     viewBox="0 0 240 240"
+     viewBox="-83 6 404 240"
      aria-label="Radar-Diagramm: Methodische Fundierung {{ m_raw }}/5, Transparenz {{ t_raw }}/5, Validierbarkeit {{ v_raw }}/5, Wartbarkeit {{ w_raw }}/5"
      role="img">
 {% else %}
@@ -90,18 +90,18 @@
   <circle cx="120"          cy="{{ p_bottom_y }}" r="4" class="radar-dot" />
   <circle cx="{{ p_left_x }}"   cy="120"          r="4" class="radar-dot" />
 
-  {% unless is_mini %}
-  <!-- Achsbeschriftungen -->
+  <!-- Achsbeschriftungen (voll + mini) -->
   <text x="120" y="20"  class="radar-label radar-label--top">Methodik</text>
   <text x="238" y="124" class="radar-label radar-label--right">Transparenz</text>
   <text x="120" y="228" class="radar-label radar-label--bottom">Validierbarkeit</text>
   <text x="2"   y="124" class="radar-label radar-label--left">Wartbarkeit</text>
 
-  <!-- Score-Werte an den Datenpunkten -->
-  {% if m_raw > 0 %}<text x="120" y="{{ p_top_y | minus: 8 }}"    class="radar-value" text-anchor="middle">{{ m_raw }}</text>{% endif %}
-  {% if t_raw > 0 %}<text x="{{ p_right_x | plus: 10 }}" y="124"  class="radar-value" text-anchor="start">{{ t_raw }}</text>{% endif %}
-  {% if v_raw > 0 %}<text x="120" y="{{ p_bottom_y | plus: 16 }}" class="radar-value" text-anchor="middle">{{ v_raw }}</text>{% endif %}
-  {% if w_raw > 0 %}<text x="{{ p_left_x | minus: 10 }}" y="124"  class="radar-value" text-anchor="end">{{ w_raw }}</text>{% endif %}
+  {% unless is_mini %}
+  <!-- Score-Werte am Ende der jeweiligen Achse -->
+  {% if m_raw > 0 %}<text x="134" y="48"  class="radar-value" text-anchor="middle">{{ m_raw }}</text>{% endif %}
+  {% if t_raw > 0 %}<text x="214" y="124" class="radar-value" text-anchor="middle">{{ t_raw }}</text>{% endif %}
+  {% if v_raw > 0 %}<text x="134" y="196" class="radar-value" text-anchor="middle">{{ v_raw }}</text>{% endif %}
+  {% if w_raw > 0 %}<text x="26"  y="124" class="radar-value" text-anchor="middle">{{ w_raw }}</text>{% endif %}
   {% endunless %}
 
 </svg>

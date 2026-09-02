@@ -21,7 +21,7 @@
   <div class="score-item">
     <div class="score-item__label">Methodische Fundierung</div>
     <div class="score-item__value">{{ scores.methodische_fundierung }}<span style="font-size:1rem;font-weight:400;color:var(--color-text-muted)">/5</span></div>
-    <div class="score-item__bar" role="progressbar" aria-valuenow="{{ scores.methodische_fundierung }}" aria-valuemin="1" aria-valuemax="5">
+    <div class="score-item__bar" role="progressbar" aria-label="Methodische Fundierung: {{ scores.methodische_fundierung }} von 5" aria-valuenow="{{ scores.methodische_fundierung }}" aria-valuemin="1" aria-valuemax="5">
       <div class="score-item__bar-fill" style="width: {{ scores.methodische_fundierung | times: 20 }}%"></div>
     </div>
     {% if scores.methodische_fundierung_note %}
@@ -34,7 +34,7 @@
   <div class="score-item">
     <div class="score-item__label">Transparenz der Grenzen</div>
     <div class="score-item__value">{{ scores.transparenz }}<span style="font-size:1rem;font-weight:400;color:var(--color-text-muted)">/5</span></div>
-    <div class="score-item__bar" role="progressbar" aria-valuenow="{{ scores.transparenz }}" aria-valuemin="1" aria-valuemax="5">
+    <div class="score-item__bar" role="progressbar" aria-label="Transparenz der Grenzen: {{ scores.transparenz }} von 5" aria-valuenow="{{ scores.transparenz }}" aria-valuemin="1" aria-valuemax="5">
       <div class="score-item__bar-fill" style="width: {{ scores.transparenz | times: 20 }}%"></div>
     </div>
     {% if scores.transparenz_note %}
@@ -47,7 +47,7 @@
   <div class="score-item">
     <div class="score-item__label">Validierbarkeit</div>
     <div class="score-item__value">{{ scores.validierbarkeit }}<span style="font-size:1rem;font-weight:400;color:var(--color-text-muted)">/5</span></div>
-    <div class="score-item__bar" role="progressbar" aria-valuenow="{{ scores.validierbarkeit }}" aria-valuemin="1" aria-valuemax="5">
+    <div class="score-item__bar" role="progressbar" aria-label="Validierbarkeit: {{ scores.validierbarkeit }} von 5" aria-valuenow="{{ scores.validierbarkeit }}" aria-valuemin="1" aria-valuemax="5">
       <div class="score-item__bar-fill" style="width: {{ scores.validierbarkeit | times: 20 }}%"></div>
     </div>
     {% if scores.validierbarkeit_note %}
@@ -60,7 +60,7 @@
   <div class="score-item">
     <div class="score-item__label">Wartbarkeit</div>
     <div class="score-item__value">{{ scores.wartbarkeit }}<span style="font-size:1rem;font-weight:400;color:var(--color-text-muted)">/5</span></div>
-    <div class="score-item__bar" role="progressbar" aria-valuenow="{{ scores.wartbarkeit }}" aria-valuemin="1" aria-valuemax="5">
+    <div class="score-item__bar" role="progressbar" aria-label="Wartbarkeit: {{ scores.wartbarkeit }} von 5" aria-valuenow="{{ scores.wartbarkeit }}" aria-valuemin="1" aria-valuemax="5">
       <div class="score-item__bar-fill" style="width: {{ scores.wartbarkeit | times: 20 }}%"></div>
     </div>
     {% if scores.wartbarkeit_note %}

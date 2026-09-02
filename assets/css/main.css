@@ -5,20 +5,25 @@
 
 /* --- Custom Properties ---------------------------------------- */
 :root {
-  --color-bg:         #F8F5F0;
+  --color-bg:         #F4F5F6;      /* Neutrales Hellgrau (oberer Verlauf) */
+  --color-bg-2:       #FFFFFF;      /* Weiss (unterer Verlauf) */
   --color-surface:    #FFFFFF;
-  --color-border:     #E2DDD8;
-  --color-text:       #1C1917;
-  --color-text-muted: #6B6560;
-  --color-accent:     #5C7A5C;      /* Sage — WCAG AA auf --color-bg */
-  --color-accent-hover: #456045;
+  --color-border:     #E4E6EA;
+  --color-text:       #1B1C1E;
+  --color-text-muted: #64676C;
+  --color-accent:     #4F6D4F;      /* Sage — 5.3:1 auf --color-bg, WCAG AA (auch fuer kleinen Text) */
+  --color-accent-hover: #3D5A3D;
   --color-link:       #4A6B8A;      /* Gedaempftes Blau */
   --color-link-hover: #2F4F6E;
-  --color-code-bg:    #EEE9E2;
+  --color-code-bg:    #EDEEF1;
 
-  /* Verdict-Farben (alle WCAG AA getestet auf weissem BG) */
+  --color-on-accent:  #FFFFFF;      /* Text auf Akzentflaechen */
+  --color-shadow:        rgba(28,25,23,0.06);
+  --color-shadow-strong: rgba(28,25,23,0.12);
+
+  /* Verdict-Farben (Textwerte >= 4.5:1 auf zugehoerigem Badge-BG, WCAG AA) */
   --color-verdict-solide:   #2D6A4F;
-  --color-verdict-vertrauen:#5C7A5C;
+  --color-verdict-vertrauen:#40603F;
   --color-verdict-vorsicht: #8B6914;
   --color-verdict-ablehnen: #8B3A3A;
 
@@ -43,6 +48,37 @@
   --radius-m:  8px;
 }
 
+/* --- Dark Mode (nur Tokens, keine Komponenten-Regeln) --------- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg:         #16171A;
+    --color-bg-2:       #202227;
+    --color-surface:    #202227;
+    --color-border:     #33363B;
+    --color-text:       #E9EAEC;
+    --color-text-muted: #9DA1A8;
+    --color-accent:     #8AAE8A;
+    --color-accent-hover: #A3C4A3;
+    --color-link:       #8FB3D4;
+    --color-link-hover: #ADC9E3;
+    --color-code-bg:    #24262B;
+
+    --color-on-accent:  #14130F;
+    --color-shadow:        rgba(0,0,0,0.35);
+    --color-shadow-strong: rgba(0,0,0,0.55);
+
+    --color-verdict-solide:   #7FCBA4;
+    --color-verdict-vertrauen:#9BC49B;
+    --color-verdict-vorsicht: #E0C56B;
+    --color-verdict-ablehnen: #E39B9B;
+
+    --color-verdict-solide-bg:   #1F3A2C;
+    --color-verdict-vertrauen-bg:#26301F;
+    --color-verdict-vorsicht-bg: #3A3115;
+    --color-verdict-ablehnen-bg: #3A2020;
+  }
+}
+
 /* --- Reset & Base --------------------------------------------- */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -63,6 +99,9 @@ html {
 
 body {
   background-color: var(--color-bg);
+  background-image: linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-2) 60%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: var(--color-text);
   font-family: var(--font-sans);
   font-size: 1rem;
@@ -80,7 +119,7 @@ main { flex: 1; }
   top: -100%;
   left: var(--space-m);
   background: var(--color-accent);
-  color: white;
+  color: var(--color-on-accent);
   padding: var(--space-s) var(--space-m);
   border-radius: var(--radius);
   text-decoration: none;
@@ -196,6 +235,9 @@ hr {
   font-size: 0.875rem;
   color: var(--color-text-muted);
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
 }
 .site-nav a:hover,
 .site-nav a[aria-current="page"] {
@@ -514,6 +556,10 @@ hr {
 .lang-switch__link {
   color: var(--color-text-muted);
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding-inline: var(--space-xs);
 }
 .lang-switch__link:hover {
   color: var(--color-accent);
@@ -544,6 +590,10 @@ hr {
   .site-nav { gap: var(--space-m); }
 }
 
+@media (max-width: 440px) {
+  .scorecard { grid-template-columns: 1fr; }
+}
+
 /* --- Focus styles (Accessibility) ----------------------------- */
 :focus-visible {
   outline: 2px solid var(--color-accent);
@@ -564,8 +614,12 @@ hr {
 
 .radar-chart--mini {
   width: 100%;
-  max-width: 140px;
+  max-width: 250px;
 }
+
+/* Mini-Achsenlabels: groesser in User-Units, damit sie nach dem
+   Herunterskalieren im Karten-Thumbnail lesbar bleiben. */
+.radar-chart--mini .radar-label { font-size: 13px; }
 
 .radar-grid {
   fill: none;
@@ -596,7 +650,7 @@ hr {
 
 .radar-dot {
   fill: var(--color-accent);
-  stroke: white;
+  stroke: var(--color-surface);
   stroke-width: 1.5;
 }
 
@@ -673,7 +727,7 @@ hr {
 }
 
 .verdict-group__count {
-  background: rgba(0,0,0,0.12);
+  background: var(--color-shadow-strong);
   border-radius: 999px;
   padding: 0.05em 0.5em;
   font-size: 0.75em;
@@ -698,7 +752,7 @@ hr {
 
 .skill-card:hover {
   border-color: var(--color-accent);
-  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 12px var(--color-shadow);
 }
 
 .skill-card__meta {

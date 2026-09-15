@@ -9,6 +9,7 @@ lang_url: "/en/2026/02/28/pbakaus-impeccable-evaluation/"
 verdict: vertrauen
 reading_time: 11
 last_audited: "28. Februar 2026"
+superseded_by: /2026/09/15/pbakaus-impeccable-reaudit-evaluation/
 
 skill_scores:
   methodische_fundierung: 4

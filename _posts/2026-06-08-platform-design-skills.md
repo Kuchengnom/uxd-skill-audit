@@ -30,69 +30,69 @@ tags:
   - vertrauen-beispiel
 ---
 
-In der Bewertungsgeschichte dieses Blogs gab es bisher immer dasselbe methodische Kernproblem: Skills, die Prinzipien benennen, ohne zu erklären woher sie kommen. `ehmo/platform-design-skills` ist das erste Repository in dieser Evaluationsreihe das dieses Problem systematisch löst. Die Frage, die bleibt, ist eine andere. Was bedeutet es, alle richtigen Quellen zu haben, und wie weit trägt das?
+In der Bewertungsgeschichte dieses Blogs kehrte ein methodisches Kernproblem immer wieder. Skills nannten Prinzipien und erklärten nicht, woher sie stammen. `ehmo/platform-design-skills` ist das erste Repository dieser Reihe, das dieses Problem systematisch löst. Offen bleibt eine andere Frage. Was bedeutet es, alle richtigen Quellen zu haben, und wie weit trägt das?
 
-354 GitHub-Stars, 20 Forks, 92 Commits. Und im Stammverzeichnis liegt `Apple_HIG.pdf`. Das ist kein Zufall. Das ist eine methodische Aussage.
+354 GitHub-Stars, 20 Forks, 92 Commits. Im Stammverzeichnis liegt auch `Apple_HIG.pdf`. Zufall ist das nicht. Es ist eine methodische Aussage.
 
 ## Was das Repository verspricht
 
-Der Skill umfasst heute über 450 Regeln für acht Apple-Plattformen, dazu Android und Web. Abgedeckt sind iOS, iPadOS, macOS, watchOS, visionOS und tvOS. Das README nennt an einer Stelle noch „300+" und an anderer „450+", was auf aktive Erweiterung hinweist. Jede Plattform hat eine eigene Verzeichnisstruktur mit `SKILL.md`, `metadata.json`, `AGENTS.md` und einem `rules/`-Ordner mit Einzeldateien. Ziel ist nicht Allgemein-Design, sondern plattformspezifische Compliance mit publizierten Herstellerrichtlinien.
+Über 450 Regeln für acht Apple-Plattformen umfasst der Skill heute. Dazu kommen Android und Web. Abgedeckt sind iOS, iPadOS, macOS, watchOS, visionOS und tvOS. Das README nennt an einer Stelle „300+" und an anderer „450+". Mit dem Projekt wächst also die Zahl. Jede Plattform hat eine eigene Verzeichnisstruktur mit `SKILL.md`, `metadata.json`, `AGENTS.md` und einem `rules/`-Ordner mit Einzeldateien. Allgemein-Design ist nicht das Ziel. Gemeint ist plattformspezifische Compliance mit publizierten Herstellerrichtlinien.
 
-Für iOS bedeutet das Apple Human Interface Guidelines. Für Android Material Design 3. Für Web WCAG 2.2 plus MDN Web Docs. Die Quellen sind nicht versteckt. Sie stehen im README mit URLs, die direkt auf die offiziellen Dokumentationen verweisen.
+Für iOS gelten die Apple Human Interface Guidelines. Für Android gilt Material Design 3. Für Web gelten WCAG 2.2 und MDN Web Docs. Die Quellen stehen mit URLs im README. Alle Links führen direkt zu den offiziellen Dokumentationen.
 
 ## Die Quellen, und was sie methodisch bedeuten
 
-Drei Kategorien von Quellen werden unterschieden, was für sich genommen schon ungewöhnlich ist.
+Der Skill trennt drei Kategorien von Quellen. Schon das ist ungewöhnlich.
 
-Erstens die normativen Plattformquellen: Apple HIG in der Fassung von 2025, Material Design 3, WCAG 2.2 und MDN. Das sind keine Meinungen, sondern offizielle Spezifikationen mit Versionsbezeichnung und konkreten Anforderungen.
+Erstens die normativen Plattformquellen. Dazu zählen die Apple HIG in der Fassung von 2025, Material Design 3, WCAG 2.2 und MDN. Meinungen sind das nicht. Es sind offizielle Spezifikationen mit Versionsbezeichnung und konkreten Anforderungen. Das zählt.
 
-Zweitens die HCI-Forschungsliteratur als sekundäre Referenzen. Card, Moran und Newell, *The Psychology of Human-Computer Interaction* von 1983, verlinkt auf archive.org. Newell und Card, *Prospects for Psychological Science in HCI*, verlinkt als PDF der Carnegie Mellon Universitätsbibliothek. Jastrzembski und Charness von 2007 über das Model Human Processor bei älteren Nutzern, verlinkt auf PubMed Central.
+Zweitens die HCI-Forschungsliteratur als sekundäre Referenz. Card, Moran und Newell schrieben 1983 *The Psychology of Human-Computer Interaction*. Verlinkt ist archive.org. Newell und Card verfassten *Prospects for Psychological Science in HCI*. Das PDF stammt aus der Universitätsbibliothek der Carnegie Mellon. Jastrzembski und Charness untersuchten 2007 das Model Human Processor bei älteren Nutzern. Verlinkt ist PubMed Central.
 
-Der README-Text macht den epistemischen Status dieser Quellen klar: „These are secondary references used to sharpen guidance around recognition over recall, visible waiting states, and input effort. They do not override Apple HIG, Material, or WCAG." Das ist eine in der Fachliteratur übliche Unterscheidung zwischen normativen Quellen, die festlegen was gelten soll, und erklärenden Quellen, die begründen warum es gilt. Diese Hierarchie explizit zu benennen ist in einem Skill-Repository außergewöhnlich.
+Der README-Text klärt den epistemischen Status dieser Quellen: „These are secondary references used to sharpen guidance around recognition over recall, visible waiting states, and input effort. They do not override Apple HIG, Material, or WCAG." Die Fachliteratur kennt diese Unterscheidung. Normative Quellen legen fest, was gelten soll. Erklärende Quellen begründen, warum es gilt. In einem Skill-Repository ist es außergewöhnlich, diese Hierarchie offen zu benennen. Das ist selten.
 
-Drittens liegt die Apple HIG als zusammengefasstes PDF im Repository selbst. Wer die Portierungsqualität prüfen möchte, muss also nicht erst die Quelle suchen.
+Drittens liegt die Apple HIG als zusammengefasstes PDF im Repository selbst. Wer die Portierungsqualität prüfen will, muss die Quelle nicht erst suchen. Kurz ist der Weg zur Prüfung.
 
 ## Die Portierungsfrage
 
 <div class="callout">
 <div class="callout__title">Die entscheidende Lücke</div>
-Gute Quellen garantieren keine korrekte Portierung. Die Apple Human Interface Guidelines 2025 sind ein umfangreiches, kontinuierlich aktualisiertes Dokument mit hunderten Seiten. Material Design 3 hat sich seit dem Erscheinen von Material Design 2 erheblich verändert. WCAG 2.2 baut auf WCAG 2.1 auf und einführt neue Erfolgskriterien. Das Repository behauptet, über 450 Regeln aus diesen Quellen destilliert zu haben. Ob jede dieser Regeln korrekt portiert wurde, ob also „Navigation Bar unter iOS" tatsächlich dem entspricht was Apple 2025 spezifiziert, lässt sich nur durch systematischen Quellvergleich prüfen. Diese Arbeit kann im Rahmen einer Evaluation nicht vollständig geleistet werden. Sie ist aber die einzige Arbeit, die methodische Fundierung vollständig verifizierbar macht.
+Gute Quellen garantieren keine korrekte Portierung. Die Apple Human Interface Guidelines 2025 sind ein umfangreiches Dokument mit hunderten Seiten. Apple aktualisiert es laufend. Material Design 3 unterscheidet sich erheblich von Material Design 2. WCAG 2.2 baut auf WCAG 2.1 auf und führt neue Erfolgskriterien ein. Das Repository behauptet, über 450 Regeln aus diesen Quellen destilliert zu haben. Ob jede Regel korrekt portiert wurde, lässt sich nur durch systematischen Quellvergleich prüfen. Entspricht „Navigation Bar unter iOS" wirklich dem, was Apple 2025 spezifiziert? Eine Evaluation kann diese Arbeit nicht vollständig leisten. Sie ist trotzdem die einzige, die methodische Fundierung vollständig verifizierbar macht.
 </div>
 
-Das ist kein Vorwurf an den Autor. Es ist die strukturelle Grenze jeder Portierung, unabhängig von der Sorgfalt mit der sie erstellt wurde. Ein Skill der Apple HIG korrekt zitiert aber eine Regel falsch destilliert ist methodisch problematischer als ein Skill der gar keine Quellen angibt, weil er impliziert der Nutzer müsse nicht mehr prüfen.
+Das ist kein Vorwurf an den Autor. Jede Portierung stößt an diese strukturelle Grenze, so sorgfältig sie auch entstanden ist. Ein Skill zitiert die Apple HIG korrekt und destilliert eine Regel falsch. Das ist methodisch problematischer als ein Skill ohne jede Quellenangabe. Er suggeriert dem Nutzer, dass er nicht mehr prüfen muss. Das ist trügerisch.
 
-Für den Unterrichtseinsatz ist das der zentrale Lernmoment: Eine Quellenangabe schiebt die Verantwortung zur Prüfung nicht weg. Sie benennt lediglich wo die Prüfung beginnen muss.
+Für den Unterrichtseinsatz ist das der zentrale Lernmoment. Eine Quellenangabe nimmt die Verantwortung zur Prüfung nicht ab. Sie zeigt nur, wo die Prüfung beginnt.
 
 ## Scope-Klarheit als pädagogisches Modell
 
-Für jede der acht Plattformen gibt es im README eine „Use when"-Sektion. Diese ist ungewöhnlich präzise. Für iOS heißt es: „Use when: Building SwiftUI or UIKit interfaces for iPhone / Reviewing iOS app code for HIG compliance / Choosing between iOS navigation patterns / Implementing accessibility, Dark Mode, Dynamic Type." Das sind keine Marketing-Formulierungen, sondern Einsatzbedingungen die helfen, den Skill nicht falsch einzusetzen.
+Für jede der acht Plattformen gibt es im README eine „Use when"-Sektion. Sie ist ungewöhnlich präzise. Für iOS heißt es zuerst „Use when: Building SwiftUI or UIKit interfaces for iPhone". Es folgen „Reviewing iOS app code for HIG compliance", „Choosing between iOS navigation patterns" und „Implementing accessibility, Dark Mode, Dynamic Type". Das sind keine Marketing-Formulierungen. Es sind Einsatzbedingungen. Sie helfen, den Skill nicht falsch einzusetzen.
 
-Die explizite Trennung von iOS und iPadOS in zwei separate Skills zeigt, dass der Autor zwischen Plattformen unterscheidet, die viele Skills zusammenfassen. iOS und iPadOS teilen eine Codebase, aber unterschiedliche Interaktionsparadigmen, Multitasking-Modelle und Eingabemodalitäten. Diese Unterscheidung in der Skill-Architektur abzubilden ist eine methodische Entscheidung mit Substanz.
+Der Autor trennt iOS und iPadOS in zwei Skills. Viele Skills fassen beide zusammen. Beide Plattformen teilen eine Codebase. Ihre Interaktionsparadigmen, Multitasking-Modelle und Eingabemodalitäten unterscheiden sich aber. Diese Unterscheidung in der Skill-Architektur abzubilden ist eine methodische Entscheidung mit Substanz.
 
-Die Inklusion von visionOS für die Apple Vision Pro ist zeitgemäß. Die HIG für visionOS ist eine der am stärksten von traditionellen mobilen Paradigmen abweichenden Plattformspezifikationen. Einen Skill dafür anzubieten ist ein Zeichen dafür, dass der Autor die Plattform-Dokumentation tatsächlich verfolgt.
+Auch visionOS für die Apple Vision Pro ist zeitgemäß. Die HIG für visionOS weicht stärker von traditionellen mobilen Paradigmen ab als fast jede andere Plattformspezifikation. Ein Skill dafür zeigt, dass der Autor die Plattform-Dokumentation tatsächlich verfolgt. Er liest mit.
 
 ## Wartbarkeit und das Anonymitätsproblem
 
-354 Stars und 20 Forks zeigen echte Community-Resonanz. Die 92 Commits belegen aktive Entwicklung. Die PR-Guidelines sind durchdacht: Fokus auf einen Themenbereich pro PR, Anforderung von Before/After-Beispielen in der PR-Beschreibung, spezifische Prüfkriterien für Portierungsänderungen.
+354 Stars und 20 Forks zeigen echte Community-Resonanz. Die 92 Commits belegen aktive Entwicklung. Die PR-Guidelines sind durchdacht. Jeder PR behandelt einen Themenbereich. Die PR-Beschreibung braucht Before/After-Beispiele. Für Portierungsänderungen gelten eigene Prüfkriterien.
 
-Und doch: Der Autor ist „ehmo". Kein verifizierbarer Nachname, kein LinkedIn, kein Twitter, keine Referenz auf professionelle Tätigkeit. Das GitHub-Profil selbst listet keine weiteren Repositories, keine Beschreibung, keine Organisationszugehörigkeit. Das ist kein Fehler, aber es ist eine Einschränkung. Für Institutionen die Skill-Qualität gegenüber Stakeholdern begründen müssen, ist „MIT-lizenzierter GitHub-Account ohne Impressum" kein ausreichendes Vertrauen-Signal.
+Und doch bleibt der Autor „ehmo". Es gibt keinen verifizierbaren Nachnamen, kein LinkedIn, kein Twitter und keine Referenz auf professionelle Tätigkeit. Im GitHub-Profil stehen keine weiteren Repositories, keine Beschreibung und keine Organisationszugehörigkeit. Fehler ist das keiner. Es ist eine Einschränkung. Institutionen müssen die Skill-Qualität gegenüber Stakeholdern begründen. Für sie ist „MIT-lizenzierter GitHub-Account ohne Impressum" kein ausreichendes Vertrauenssignal. Das reicht nicht.
 
-Gleichzeitig zeigt die tatsächliche Struktur des Repositories eine Arbeitsdisziplin die auf professionellen Hintergrund hindeutet: die PR-Richtlinien, die Quellenunterscheidung, die Changelog-Pflege. Der anonyme Maintainer hat offensichtlich Erfahrung mit Dokumentationsprojekten und Versionierung. Die Frage der Identität bleibt offen, ändert aber an der evaluierbaren Qualität des Inhalts wenig.
+Eine Arbeitsdisziplin zeigt zugleich die Struktur des Repositories. Sie deutet auf einen professionellen Hintergrund hin. Belegt ist das durch die PR-Richtlinien, die Quellenunterscheidung und die Changelog-Pflege. Der anonyme Maintainer kennt offensichtlich Dokumentationsprojekte und Versionierung. Offen bleibt die Frage der Identität. An der evaluierbaren Qualität des Inhalts ändert sie wenig.
 
 ## Was das Repository von fast allem anderen unterscheidet
 
-Um die Einordnung klar zu machen: Bisher wurde in dieser Evaluationsreihe kein einziges Repository gefunden das HCI-Forschungsliteratur mit Direktlinks auf Originalquellen zitiert. Kein einziges hat eine Quelldatei physisch ins Repository aufgenommen, wie hier die Apple_HIG.pdf. Kein einziges hat zwischen normativen und sekundären Quellen explizit unterschieden.
+Zur Einordnung drei Beobachtungen. Bisher zitierte in dieser Evaluationsreihe kein Repository HCI-Forschungsliteratur mit Direktlinks auf Originalquellen. Keines nahm eine Quelldatei physisch auf, wie hier die Apple_HIG.pdf. Keines unterschied explizit zwischen normativen und sekundären Quellen.
 
-Das sind keine kleinen Unterschiede. Das sind strukturelle Qualitätsmerkmale die zeigen, dass der Autor die Grenze zwischen „gut klingendem Prinzip" und „verifizierbarer Anforderung" kennt und respektiert.
+Klein sind diese Unterschiede nicht. Es sind strukturelle Qualitätsmerkmale. Der Autor kennt die Grenze zwischen „gut klingendem Prinzip" und „verifizierbarer Anforderung". Er respektiert sie.
 
-Im Vergleich zum zuletzt evaluierten `szilu/ux-designer-skill`, der 19 Quellen behauptet aber keine davon direkt verlinkt, ist der methodische Abstand erheblich.
+Zuletzt evaluiert wurde `szilu/ux-designer-skill`. Der Skill behauptet 19 Quellen und verlinkt keine davon direkt. Erheblich ist der methodische Abstand.
 
 ## Empfehlung für den Unterrichtseinsatz
 
-`ehmo/platform-design-skills` eignet sich als positives Gegenbeispiel zu den meisten anderen Skills in dieser Evaluationsreihe. Der Einsatz empfiehlt sich in zwei Kontexten:
+`ehmo/platform-design-skills` eignet sich als positives Gegenbeispiel zu den meisten anderen Skills dieser Reihe. Ich empfehle den Einsatz in zwei Kontexten.
 
-Erstens als Modell dafür, wie Quellenarbeit im Skill-Kontext aussehen sollte. Die Quellenstruktur, die Hierarchie normativer und sekundärer Referenzen, die physische Beigabe der Apple HIG als PDF: das alles kann als Benchmark für eigene Skill-Entwicklung dienen.
+Erstens als Modell für Quellenarbeit im Skill-Kontext. Die Quellenstruktur, die Hierarchie normativer und sekundärer Referenzen und die physische Beigabe der Apple HIG als PDF taugen als Benchmark für eigene Skill-Entwicklung.
 
-Zweitens als Einstieg in die Portierungsfrage. Zwei oder drei Regeln aus dem iOS-Skill auswählen, die entsprechenden Abschnitte in der Apple HIG aufschlagen, und vergleichen. Das ist eine überschaubare Übung die zeigt, wie viel Interpretationsraum zwischen „Quelle vorhanden" und „korrekt portiert" noch bleibt.
+Zweitens als Einstieg in die Portierungsfrage. Man wählt zwei oder drei Regeln aus dem iOS-Skill. Man schlägt die entsprechenden Abschnitte in der Apple HIG auf und vergleicht. Überschaubar ist die Übung. Sie zeigt, wie viel Interpretationsraum zwischen „Quelle vorhanden" und „korrekt portiert" bleibt.
 
-Der Skill verdient das Urteil `vertrauen`. Er ist methodisch das Sorgfältigste was dieses Ökosystem bisher hervorgebracht hat, mit dem einzigen echten Vorbehalt eines anonymen Einzelmaintainers. Wer plattformspezifische Designguide-Compliance in Claude Code einsetzen will, hat hier den bisher besten verfügbaren Ausgangspunkt.
+Der Skill verdient das Urteil `vertrauen`. Methodisch ist er das Sorgfältigste, was dieses Ökosystem bisher hervorgebracht hat. Den einzigen echten Vorbehalt liefert der anonyme Einzelmaintainer. Wer plattformspezifische Designguide-Compliance in Claude Code einsetzen will, findet hier den besten verfügbaren Ausgangspunkt. Besser geht es derzeit nicht.

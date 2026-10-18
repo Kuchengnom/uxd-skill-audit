@@ -29,74 +29,74 @@ tags:
   - phazurlabs
 ---
 
-Manche Repositories lassen sich durch ihren README-Einstieg sofort einordnen. `phazurlabs/ux-ui-mastery` beginnt mit der Zeile: *"The most comprehensive UX/UI design intelligence ever built for an AI coding assistant."* Dieser Superlativ ist nicht die Überschrift eines Abschnitts, sondern die erste Prämisse des gesamten Projekts. Alles, was folgt, soll ihn belegen.
+Manche Repositories lassen sich durch ihren README-Einstieg sofort einordnen. `phazurlabs/ux-ui-mastery` beginnt mit der Zeile: *"The most comprehensive UX/UI design intelligence ever built for an AI coding assistant."* Dieser Superlativ steht nicht in einer Abschnittsüberschrift. Er ist die erste Prämisse des gesamten Projekts. Alles, was folgt, soll ihn belegen.
 
-Was folgt, ist in der Tat beeindruckend groß: 19 Skills, 55 Referenzdateien, 10 Slash-Commands, 87 Dateien, 310.000 Wörter. Das sind Zahlen, die im Ökosystem der Claude-Design-Skills konkurrenzlos sind. Und genau deshalb lohnt es sich, diesen Skill genau anzusehen. Er treibt eine der grundlegendsten Fragen des gesamten Felds auf die Spitze: Ab wann ist mehr nicht mehr besser?
+Was folgt, ist in der Tat beeindruckend groß. In Zahlen sind es 19 Skills, 55 Referenzdateien, 10 Slash-Commands, 87 Dateien und 310.000 Wörter. Im Ökosystem der Claude-Design-Skills ist das konkurrenzlos. Genau deshalb lohnt sich der genaue Blick. Der Skill treibt eine der grundlegendsten Fragen des Felds auf die Spitze. Ab wann ist mehr nicht mehr besser?
 
 ## Der Zählerstand zählt, nur nicht so wie das Projekt es meint
 
-Der README-Text präsentiert Metriken wie ein Dashboard: 25+ Laws of UX, 50+ kognitive Biases, 40+ Produktionskomponenten, 18+ Fallstudien, 30+ haptische Muster. Jede Zahl ist größer als die der Konkurrenz. Das ist das implizite Argument: Umfang beweist Qualität.
+Der README-Text präsentiert Metriken wie ein Dashboard. Er nennt 25+ Laws of UX, 50+ kognitive Biases, 40+ Produktionskomponenten, 18+ Fallstudien und 30+ haptische Muster. Jede Zahl übertrifft die der Konkurrenz. Das implizite Argument lautet: Umfang beweist Qualität.
 
-Demgegenüber steht ein anderer Zählerstand, der nirgendwo im README steht: **2 Stars. 1 Fork. 4 Commits. 0 Issues. 0 Pull Requests. 0 Releases.**
+Ein anderer Zählerstand steht nirgends im README: **2 Stars. 1 Fork. 4 Commits. 0 Issues. 0 Pull Requests. 0 Releases.**
 
-Das Repository ist seit dem initialen Upload praktisch unverändert. Es gibt keine einzige öffentliche Diskussion, keinen Community-Post, keinen Verweis in den einschlägigen Aggregatoren wie awesome-claude-skills, claudeskills.info oder claudemarketplaces.com. Phazurlabs hat ein Plugin für die Community gebaut, und die Community hat es nicht genommen.
+Seit dem initialen Upload ist das Repository praktisch unverändert. Es gibt keine öffentliche Diskussion und keinen Community-Post. In den einschlägigen Aggregatoren wie awesome-claude-skills, claudeskills.info oder claudemarketplaces.com taucht es nicht auf. Phazurlabs hat ein Plugin für die Community gebaut. Die Community hat es abgelehnt.
 
-Das ist keine Kleinigkeit. In einem Ökosystem, in dem gut gemachte Skills innerhalb von Wochen Tausende Stars bekommen, ist Stille bei 2 Stars ein Signal. `pbakaus/impeccable` kam in drei Wochen auf 10.000, `Dammyjay93/interface-design` auf rund 4.600. Es bedeutet nicht zwangsläufig, dass der Inhalt schlecht ist. Es bedeutet, dass niemand bereit war, die Installation zu testen.
+Eine Kleinigkeit ist das nicht. Gut gemachte Skills sammeln im Ökosystem innerhalb von Wochen Tausende Stars. `pbakaus/impeccable` kam in drei Wochen auf 10.000. `Dammyjay93/interface-design` kam auf rund 4.600. Bei 2 Stars ist die Stille ein Signal. Schlecht muss der Inhalt deshalb nicht sein. Es hat aber niemand die Installation testen wollen. Das sagt viel.
 
 ## Die Quellenarbeit: Real, aber unüberprüfbar
 
-Im Abschnitt „Research Sources" listet das Repository eine beeindruckende Bibliographie auf: Daniel Kahneman mit Peak-End Rule und System 1/2, John Sweller mit der Cognitive Load Theory, Jakob Nielsen mit seinen Heuristiken, WCAG 2.2 und WCAG 3.0 vom April 2026, arXiv-Papiere von der ACM CHI 2025, W3C Design Tokens vom Oktober 2025, Apple WWDC 2025 und Google I/O 2025.
+Im Abschnitt „Research Sources" listet das Repository eine beeindruckende Bibliographie auf. Genannt sind Daniel Kahneman mit Peak-End Rule und System 1/2, John Sweller mit der Cognitive Load Theory und Jakob Nielsen mit seinen Heuristiken. Dazu kommen WCAG 2.2 und WCAG 3.0 vom April 2026. Es folgen arXiv-Papiere von der ACM CHI 2025, W3C Design Tokens vom Oktober 2025, Apple WWDC 2025 und Google I/O 2025.
 
-Das sind echte Quellen. Wer die arXiv-IDs nachschlägt, findet tatsächlich Papiere. Wer die WCAG-Version prüft, findet den korrekten Stand. Die Bibliographie ist keine Erfindung.
+Die Quellen sind echt. Wer die arXiv-IDs nachschlägt, findet tatsächlich Papiere. Wer die WCAG-Version prüft, findet den korrekten Stand. Erfunden ist die Bibliographie nicht.
 
-Das Problem liegt eine Ebene tiefer: **Werden diese Quellen korrekt in Designprinzipien übersetzt?** Das ist bei einem Skill, der auf Claude-generiertem Inhalt basiert, nicht überprüfbar. Hier beginnt das zentrale epistemische Problem dieses Projekts.
+Das Problem liegt eine Ebene tiefer. **Werden diese Quellen korrekt in Designprinzipien übersetzt?** Bei einem Skill auf Basis von Claude-generiertem Inhalt lässt sich das nicht prüfen. Hier beginnt das zentrale Problem.
 
 <div class="callout">
 <div class="callout__title">Das Selbstreferenz-Problem</div>
 
 Der letzte Satz des README lautet: <em>"Built with obsessive attention to detail by Design Tribe Republic. Powered by Claude Opus 4.6."</em>
 
-Das bedeutet: Claude hat dieses Plugin geschrieben. Installiert man es, lehrt man Claude etwas, das Claude selbst formuliert hat. Das ist kein böswilliger Trick, aber es ist ein epistemisches Problem, das nirgendwo im Plugin kommuniziert wird.
+Claude hat dieses Plugin also geschrieben. Wer es installiert, lehrt Claude etwas, das Claude selbst formuliert hat. Böswillig ist das nicht. Es ist aber ein epistemisches Problem. Das Plugin kommuniziert es nirgends. Das wiegt schwer.
 
-Wenn ein Skill behauptet, Kahneman korrekt zu portieren, und die einzige Quelle dieser Portierung Claudes Training auf Kahneman-Texten ist, dann prüft das Plugin keine externe Expertise gegen Claudes Wissenslücken. Es verstärkt, was Claude ohnehin schon denkt. Tiefkalibrierte Fehler werden dadurch stabiler, nicht korrekter: falsch vereinfachte Heuristiken, aus dem Kontext gerissene Biaseffekte.
+Angenommen, ein Skill behauptet, Kahneman korrekt zu portieren. Die einzige Quelle dieser Portierung ist Claudes Training auf Kahneman-Texten. Dann prüft das Plugin keine externe Expertise gegen Claudes Wissenslücken. Es verstärkt, was Claude ohnehin denkt. Tief kalibrierte Fehler werden dadurch stabiler und nicht korrekter. Beispiele sind falsch vereinfachte Heuristiken und aus dem Kontext gerissene Biaseffekte.
 
-Die methodisch sinnvolle Alternative: ein Domain-Experte vergleicht Claudes Portierung einer Quelle mit der Originalquelle und dokumentiert Abweichungen. Das ist aufwendig, aber das Einzige, was „korrekte Portierung" operationalisierbar macht.
+Methodisch sinnvoll wäre eine Alternative. Ein Domain-Experte vergleicht Claudes Portierung einer Quelle mit der Originalquelle und dokumentiert die Abweichungen. Aufwendig ist das. Nur so wird „korrekte Portierung" operationalisierbar.
 </div>
 
 ## Transparenz als Leerstelle
 
-Ein Plugin, das „the most comprehensive UX/UI design intelligence ever built" verspricht, trägt eine besondere Verantwortung zur Einschränkungskommunikation. Denn je umfangreicher die Versprechen, desto schwerwiegender sind Fehleinschätzungen.
+Ein Plugin, das „the most comprehensive UX/UI design intelligence ever built" verspricht, trägt eine besondere Verantwortung zur Einschränkungskommunikation. Je umfangreicher die Versprechen sind, desto schwerer wiegen Fehleinschätzungen. Das gilt hier.
 
-Was `ux-ui-mastery` kommuniziert: sehr viel Können. Was es nicht kommuniziert: irgendeine Grenze.
+`ux-ui-mastery` kommuniziert sehr viel Können. Eine Grenze kommuniziert es nicht.
 
-Es gibt keinen Abschnitt „When not to use this". Es gibt keine Warnung, dass WCAG-Compliance-Prüfung durch einen LLM keine formale Accessibility-Prüfung ersetzt. Es gibt keinen Hinweis, dass „Fitts's Law predicts a 23% improvement" eine grobe Modellschätzung ist und keine empirische Messung. Die Skill-Domain „Agentic AI" behandelt Claudes eigene Architektur als Designgegenstand, ohne die offensichtliche Befangenheit zu benennen.
+Einen Abschnitt „When not to use this" gibt es nicht. Eine Warnung fehlt, dass die WCAG-Compliance-Prüfung durch ein LLM keine formale Accessibility-Prüfung ersetzt. Ebenso fehlt der Hinweis, dass „Fitts's Law predicts a 23% improvement" eine grobe Modellschätzung ist und keine empirische Messung. In der Skill-Domain „Agentic AI" ist Claudes eigene Architektur Designgegenstand. Die offensichtliche Befangenheit benennt sie nicht.
 
-Das Schweigen zu Grenzen ist in diesem Skill besonders auffällig, weil er explizit den „Liz Lerman Critical Response Process" als Methodenquelle nennt. Der Critical Response Process ist in seiner Originalform ein strukturiertes Feedback-Verfahren, das explizit unterscheidet zwischen dem, was ein Werk zeigt, und dem, was es nicht zeigt. Ein Plugin, das diese Methode lehrt, ohne sie auf sich selbst anzuwenden, demonstriert genau den Fehler, vor dem die Methode schützen soll.
+Besonders auffällig ist das Schweigen zu Grenzen. Als Methodenquelle nennt der Skill explizit den „Liz Lerman Critical Response Process". In der Originalform ist das ein strukturiertes Feedback-Verfahren. Es unterscheidet explizit zwischen dem, was ein Werk zeigt, und dem, was es nicht zeigt. Das Plugin lehrt diese Methode und wendet sie nicht auf sich selbst an. Es demonstriert genau den Fehler, vor dem die Methode schützen soll. Der Widerspruch ist offensichtlich.
 
 ## 310.000 Wörter als Anti-Pattern
 
-Die Kennzahl „310K+ words" begegnet einem im README dreimal. Sie ist das stärkste Argument des Projekts und zugleich das aufschlussreichste Signal für ein grundlegendes Missverständnis.
+Die Kennzahl „310K+ words" begegnet einem im README dreimal. Sie ist das stärkste Argument des Projekts. Zugleich verrät sie ein grundlegendes Missverständnis.
 
-Sprachmodelle produzieren Text. Mehr Text zu produzieren kostet nichts. Die Frage ist nicht, ob 310.000 Wörter generiert werden können, sondern ob 310.000 Wörter nützlich sind. Das ist eine Frage, die nur durch Nutzung beantwortet werden kann. Die Community hat diese Antwort gegeben, indem sie ausgeblieben ist.
+Sprachmodelle produzieren Text. Mehr Text kostet nichts. Offen ist, ob 310.000 Wörter nützlich sind. Beantworten kann das nur die Nutzung. Die Community ist ausgeblieben. Das ist die Antwort.
 
-In der Designtheorie, auf die sich das Plugin beruft, gibt es einen Namen für das Phänomen, wenn Quantität als Qualitätsproxy verwendet wird: Feature Overflow, und auf der Ebene der Information Architecture Category Pollution. Ein System, das alles kategorisiert, kategorisiert nichts, weil die Kategorien ihre Unterscheidungskraft verlieren. Ein Plugin mit 19 Skill-Domains, 55 Referenzdateien und 87 Dateien hat dasselbe Problem auf der Ebene seiner eigenen Architektur.
+Die Designtheorie, auf die sich das Plugin beruft, hat einen Namen für dieses Phänomen. Wird Quantität als Qualitätsproxy verwendet, heißt es Feature Overflow. In der Information Architecture heißt es Category Pollution. Ein System, das alles kategorisiert, kategorisiert nichts. Ihre Unterscheidungskraft verlieren die Kategorien. Ein Plugin mit 19 Skill-Domains, 55 Referenzdateien und 87 Dateien hat dasselbe Problem. Es steckt in der eigenen Architektur.
 
-Das Plugin beschreibt im Abschnitt „How It Works" selbst, warum das ein Problem ist: „progressive disclosure — the same cognitive principle it teaches." Progressive Disclosure bedeutet, dass Nutzende nur das sehen, was sie in diesem Moment brauchen. 87 Dateien und 310.000 Wörter sind das Gegenteil davon. Das ist ein Kompendium, das alles gleichzeitig präsentiert.
+Im Abschnitt „How It Works" erklärt das Plugin das Problem selbst. Es nennt „progressive disclosure — the same cognitive principle it teaches." Progressive Disclosure heißt, dass Nutzende nur sehen, was sie in diesem Moment brauchen. 87 Dateien und 310.000 Wörter sind das Gegenteil. Das Kompendium präsentiert alles gleichzeitig.
 
 ## Der Vergleich mit dem Feld
 
-`ehmo/platform-design-skills`, in dieser Reihe mit dem Urteil „vertrauen" bewertet, hat 354 Stars, 92 Commits, ein CHANGELOG, PR-Guidelines und Apple HIG als PDF direkt im Repository. Der Inhalt ist weniger umfangreich, aber die Qualitätssicherung ist nachvollziehbar. `mastepanoski/claude-skills` kombiniert Nielsen, WCAG und Don Norman, also drei Frameworks die sich gegenseitig überprüfen lassen.
+`ehmo/platform-design-skills` bekam in dieser Reihe das Urteil „vertrauen". 354 Stars hat der Skill, 92 Commits, ein CHANGELOG und PR-Guidelines. Die Apple HIG liegt als PDF direkt im Repository. Sein Inhalt ist weniger umfangreich. Die Qualitätssicherung ist nachvollziehbar. `mastepanoski/claude-skills` kombiniert Nielsen, WCAG und Don Norman. Das sind drei Frameworks, die sich gegenseitig überprüfen lassen.
 
-`ux-ui-mastery` ist nach eigener Angabe größer als beide zusammen. Es hat weniger Nutzer als jeder andere in diesem Blog evaluierte Skill.
+`ux-ui-mastery` ist nach eigener Angabe größer als beide zusammen. Es hat weniger Nutzer als jeder andere Skill, den dieser Blog evaluiert hat.
 
 ## Empfehlung für den Unterrichtseinsatz
 
-Dieses Repository eignet sich nicht als primäre Lehrressource für UX-Methodik. Es ist weder hinreichend validiert noch ausreichend transparent über seine Grenzen.
+Als primäre Lehrressource für UX-Methodik eignet sich dieses Repository nicht. Es ist weder hinreichend validiert noch ausreichend transparent über seine Grenzen.
 
-Es eignet sich ausgezeichnet als Diskussionsgegenstand für zwei spezifische Lehrthemen:
+Ausgezeichnet eignet es sich als Diskussionsgegenstand für zwei Lehrthemen.
 
-Erstens: Der Unterschied zwischen Quellennennung und Quellenkompetenz. Die Bibliographie ist real. Die Portierung ist unüberprüfbar. Das ist genau das Problem, das Studierende beim kritischen Umgang mit jeder Quelle erkennen müssen, und hier tritt es in einer Form auf die sich zeigen lässt.
+Erstens der Unterschied zwischen Quellennennung und Quellenkompetenz. Real ist die Bibliographie. Unüberprüfbar ist die Portierung. Dieses Problem müssen Studierende bei jeder Quelle erkennen. Hier tritt es in einer Form auf, die sich zeigen lässt. Das taugt als Beispiel.
 
-Zweitens: Das Selbstreferenz-Problem bei KI-generierten Wissenssystemen. Wenn Claude beschreibt, wie man Designheuristiken korrekt anwenden soll, und dieses Destillat als Plugin in Claude zurückinstalliert wird, was genau lernt Claude dann? Das ist keine rhetorische Frage. Es ist eine offene Forschungsfrage, die im Feld noch unbeantwortet ist.
+Zweitens das Selbstreferenz-Problem bei KI-generierten Wissenssystemen. Claude beschreibt, wie man Designheuristiken korrekt anwendet. Dieses Destillat wird als Plugin in Claude zurückinstalliert. Was genau lernt Claude dann? Rhetorisch ist die Frage nicht. Im Feld ist es eine offene Forschungsfrage.
 
-310.000 Wörter können einen Ausgangspunkt für beide Diskussionen bilden. Als zuverlässige Designressource für die tägliche Praxis ist dieses Plugin derzeit nicht geeignet.
+310.000 Wörter können beide Diskussionen anstoßen. Als zuverlässige Designressource für die tägliche Praxis taugt das Plugin derzeit nicht.

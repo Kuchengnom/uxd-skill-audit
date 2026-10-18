@@ -14,25 +14,25 @@ example_scores:
     <span class="post-category">Methodik</span>
     <h1 class="post-title">Wie werden Skills bewertet</h1>
     <p style="color: var(--color-text-muted); font-family: var(--font-ui); max-width: 55ch;">
-      Ein Skill der gut klingt, ist kein Skill der gut funktioniert. Dieser Rahmen macht die Unterschiede sichtbar.
+      Ein Skill, der gut klingt, funktioniert nicht automatisch gut. Dieser Rahmen macht die Unterschiede sichtbar.
     </p>
   </div>
 </div>
 
 <div class="post-content container" markdown="1">
 
-Das Skill-Oekosystem fuer Claude wächst schneller als es evaluiert wird. Stars auf GitHub, viral gegangene Tweets und schön formatierte READMEs sagen nichts über die methodische Qualitaet eines Skills aus. Dieser Blog benutzt deshalb vier Dimensionen zur Bewertung.
+Das Skill-Ökosystem für Claude wächst schneller, als jemand es evaluiert. Stars auf GitHub, virale Tweets und schön formatierte READMEs sagen nichts über die methodische Qualität eines Skills. Dieser Blog bewertet deshalb entlang von vier Dimensionen.
 
 ---
 
-## Das Vier-Dimensionen-Modell — Visualisiert
+## Das Vier-Dimensionen-Modell
 
 <div class="scorecard-wrapper">
   <div style="width: 300px; margin: 0 auto;">
     {% include skill-radar.html scores=page.example_scores size="full" %}
   </div>
   <p style="color: var(--color-text-muted); font-family: var(--font-ui); margin-top: var(--space-l); text-align: center; font-size: 0.9rem;">
-    <strong>Beispiel:</strong> Ein Skill mit hoher Wartbarkeit (5), solider Methodik (4) und Validierbarkeit (4), aber schwächerer Transparenz über Grenzen (3).
+    <strong>Beispiel:</strong> Ein Skill mit hoher Wartbarkeit (5), solider Methodik (4) und Validierbarkeit (4). Die Transparenz über Grenzen fällt ab (3).
   </p>
 </div>
 
@@ -40,54 +40,54 @@ Das Skill-Oekosystem fuer Claude wächst schneller als es evaluiert wird. Stars 
 
 ## Dimension 1: Methodische Fundierung (1–5)
 
-Ist die zugrundeliegende Technik anerkannt, korrekt verstanden und akkurat in den Skill portiert?
+Ist die zugrunde liegende Technik anerkannt, korrekt verstanden und akkurat in den Skill übertragen?
 
-Ein Skill der behauptet, Nielsen's 10 Heuristiken umzusetzen, muss alle zehn korrekt wiedergeben. Ein Skill der Cognitive Walkthroughs anbietet, muss die Methode von Wharton et al. kennen, nicht eine vereinfachte Variante daraus. Punkte werden abgezogen wenn:
+Ein Skill verspricht Nielsens 10 Heuristiken. Dann muss er alle zehn korrekt wiedergeben. Ein Skill bietet Cognitive Walkthroughs an. Dann muss er die Methode von Wharton et al. kennen und keine vereinfachte Variante. Punkte fallen weg, wenn:
 
-- Terminologie frei erfunden oder ungenau verwendet wird
-- Die Quelle nicht genannt oder falsch zitiert wird
-- Die Methode vereinfacht wird ohne die Vereinfachung zu kommunizieren
-- KI-Output als Ersatz fuer menschliche Expertise dargestellt wird
+- die Terminologie frei erfunden oder ungenau ist
+- die Quelle fehlt oder falsch zitiert wird
+- die Methode vereinfacht wird, ohne die Vereinfachung zu nennen
+- KI-Output als Ersatz für menschliche Expertise auftritt
 
 ## Dimension 2: Transparenz der Grenzen (1–5)
 
-Kommuniziert der Skill klar, was er nicht kann?
+Sagt der Skill klar, was er nicht kann?
 
-Dies ist die kritischste Dimension fuer den Lehrkontext. Ein Heuristic-Evaluation-Skill der keine Nutzer befragt hat, kann keine Usability-Probleme *beweisen* — er kann nur Hypothesen generieren. Ein Skill der das nicht kommuniziert, fuehrt Studierende in die Irre. Punkte werden abgezogen wenn:
+Für die Lehre ist das die kritischste Dimension. Ein Heuristic-Evaluation-Skill hat keine Nutzer befragt. Er kann Usability-Probleme deshalb nicht *beweisen*. Er erzeugt Hypothesen. Verschweigt der Skill das, führt er Studierende in die Irre. Punkte fallen weg, wenn:
 
-- Generierten Artefakten wissenschaftliche Autoritaet zugeschrieben wird
-- Keine Warnung vorhanden ist wo menschliche Expertise unersetzbar bleibt
-- Scores und Ratings ohne statistische Grundlage praesentiert werden
-- Der Skill impliziert, Nutzerforschung zu *ersetzen* statt zu *unterstuetzen*
+- generierte Artefakte wissenschaftliche Autorität bekommen
+- eine Warnung fehlt, wo menschliche Expertise unersetzbar bleibt
+- Scores und Ratings ohne statistische Grundlage erscheinen
+- der Skill Nutzerforschung *ersetzen* will, statt sie zu *unterstützen*
 
 ## Dimension 3: Validierbarkeit (1–5)
 
-Gibt es Testfaelle, Referenzoutputs oder Vergleiche mit menschlicher Expertenarbeit?
+Gibt es Testfälle, Referenzoutputs oder Vergleiche mit menschlicher Expertenarbeit?
 
-Ein guter Skill kann beweisen was er tut. Das bedeutet: Beispiel-Inputs mit dokumentierten Erwartungen, Python-Skripte die Outputs pruefen, oder zumindest ein Before/After mit Erklaerung. Punkte werden abgezogen wenn:
+Ein guter Skill belegt, was er tut. Das heißt: Beispiel-Inputs mit dokumentierten Erwartungen, Python-Skripte, die Outputs prüfen, oder zumindest ein Before/After mit Erklärung. Punkte fallen weg, wenn:
 
-- Keine Beispiele vorhanden sind
-- Keine ausfuehrbaren Werkzeuge mitgeliefert werden
-- Kein Vergleich zwischen Skill-Output und Expertenurteil existiert
-- Der Skill nicht reproduzierbar ist
+- Beispiele fehlen
+- keine ausführbaren Werkzeuge mitgeliefert werden
+- kein Vergleich zwischen Skill-Output und Expertenurteil existiert
+- der Skill nicht reproduzierbar ist
 
 ## Dimension 4: Wartbarkeit (1–5)
 
-Wer steht dahinter, wie ist die Versionierung, wann wurde zuletzt aktualisiert?
+Wer steht dahinter, wie ist die Versionierung, wann gab es das letzte Update?
 
-Ein archivierter Skill, ein anonymer Maintainer oder eine fehlende Lizenz sind Warnsignale. Punkte werden abgezogen wenn:
+Ein archivierter Skill, ein anonymer Maintainer oder eine fehlende Lizenz sind Warnsignale. Punkte fallen weg, wenn:
 
-- Das Repository seit mehr als 6 Monaten nicht aktualisiert wurde
-- Keine Lizenz vorhanden ist
-- Ein einziger Maintainer ohne Nachfolger existiert
-- Issues und Pull Requests ignoriert werden
+- das Repository seit mehr als 6 Monaten keine Änderung bekam
+- eine Lizenz fehlt
+- ein einziger Maintainer ohne Nachfolger übrig bleibt
+- Issues und Pull Requests liegen bleiben
 
 ---
 
 ## Wie man diese Bewertung liest
 
-Keine Dimension ist wichtiger als die anderen — aber die Kombination entscheidet. Ein Skill mit hoher Wartbarkeit und niedriger methodischer Fundierung ist gepflegter Unsinn. Ein Skill mit hoher Fundierung und keiner Validierbarkeit ist unueberprüfbare Theorie.
+Keine Dimension wiegt mehr als die anderen. Die Kombination entscheidet. Hohe Wartbarkeit bei niedriger methodischer Fundierung ergibt gepflegten Unsinn. Hohe Fundierung ohne Validierbarkeit bleibt unüberprüfbare Theorie.
 
-Die Bewertungen auf diesem Blog sind Momentaufnahmen zum angegebenen Datum. Skills aendern sich, und wir aktualisieren wo moeglich.
+Die Bewertungen sind Momentaufnahmen zum angegebenen Datum. Skills ändern sich. Ich aktualisiere, wo es geht.
 
 </div>

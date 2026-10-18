@@ -6,10 +6,10 @@ title: UX Skills Review
 <div class="page-section">
   <div class="container">
     <p style="max-width: 55ch; font-size: 1.125rem; color: var(--color-text-muted); margin-bottom: var(--space-2xl);">
-      Design-Methodik trifft auf Claude-Skills. Jeder Post erklaert eine Technik, evaluiert einen existierenden Skill danach — und macht die Bewertungskriterien transparent.
+      Design-Methodik trifft auf Claude-Skills. Jeder Post erklärt eine Technik und evaluiert einen existierenden Skill daran. Die Bewertungskriterien liegen offen.
     </p>
 
-    <div class="section-title">Neueste Beitraege</div>
+    <div class="section-title">Neueste Beiträge</div>
     <ul class="post-list">
       {% for post in site.posts %}
       <li class="post-list-item">

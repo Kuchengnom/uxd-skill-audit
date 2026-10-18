@@ -27,13 +27,13 @@ tags:
   - skill-evaluation
 ---
 
-Dieser Skill wurde archiviert, kurz bevor dieser Post erschienen ist. Das ist keine Ironie. Es ist eine Lektion.
+Dieser Skill wurde am 24. Februar 2026 archiviert, zwei Tage vor diesem Post. Ironie ist es nicht. Es ist eine Lektion.
 
 ## Was der Skill war
 
-`claude-skill-refactoring-ui` von OPKOD France wendete Prinzipien aus dem Buch *Refactoring UI* von Adam Wathan und Steve Schoger auf Tailwind CSS und shadcn/ui an. Das Skill aktivierte automatisch bei UI-Aufgaben: Settings-Seiten mit Formularen, Dashboard-Layouts, Komponenten die "professioneller" aussehen sollen.
+`claude-skill-refactoring-ui` von OPKOD France wendete Prinzipien aus dem Buch *Refactoring UI* von Adam Wathan und Steve Schoger auf Tailwind CSS und shadcn/ui an. Der Skill aktivierte automatisch bei UI-Aufgaben. Dazu zählten Settings-Seiten mit Formularen, Dashboard-Layouts und Komponenten, die "professioneller" aussehen sollen.
 
-Die Quelle ist unbestreitbar solide. *Refactoring UI* gilt als eines der wenigen Design-Bücher, das von Entwicklern tatsächlich gelesen und angewendet wird. Die Prinzipien sind gut begründet und praxiserprobt: Weißraum vor Schatten, Hierarchie durch Größe statt Farbe, Ränder reduzieren.
+Die Quelle ist unbestreitbar solide. *Refactoring UI* gilt als eines der wenigen Design-Bücher, das Entwickler tatsächlich lesen und anwenden. Die Prinzipien sind gut begründet und praxiserprobt. Weißraum vor Schatten. Hierarchie durch Größe statt Farbe. Ränder reduzieren.
 
 ## Das Problem mit der Portierung
 
@@ -42,23 +42,23 @@ Die Quelle ist unbestreitbar solide. *Refactoring UI* gilt als eines der wenigen
 Wie viel vom Original ist angekommen? Und was wurde stillschweigend weggelassen?
 </div>
 
-*Refactoring UI* ist ein Framework-agnostisches Buch. Die Portierung in einen Tailwind/shadcn-spezifischen Skill ist eine legitime Designentscheidung, aber eine die kommuniziert werden muss. Wer diesen Skill in ein Svelte-Projekt, ein Django-Template oder ein natives Android-Interface einbindet, bekommt keine Warnung, sondern nur Code der nicht passt.
+*Refactoring UI* ist ein Framework-agnostisches Buch. Die Portierung in einen Tailwind/shadcn-spezifischen Skill ist eine legitime Designentscheidung. Sie muss aber kommuniziert werden. Das gilt für Svelte-Projekte, Django-Templates und native Android-Interfaces. Dort gibt es keine Warnung. Es gibt nur Code, der nicht passt.
 
-Hinzu kommt: Das Buch behandelt visuelle Hierarchie, Farbsysteme und Spacing. Es behandelt nicht: Usability-Testing, Cognitive Load, Accessibility jenseits von Kontrast, oder nutzerforschungsbasierte Designentscheidungen. Ein Skill der das nicht kommuniziert, suggeriert ein breiteres Fundament als vorhanden ist.
+Das Buch behandelt visuelle Hierarchie, Farbsysteme und Spacing. Usability-Testing, Cognitive Load und nutzerforschungsbasierte Designentscheidungen behandelt es nicht. Auch Accessibility geht nicht über Kontrast hinaus. Ein Skill, der das verschweigt, suggeriert ein breiteres Fundament als vorhanden.
 
 ## Das Archivierungsproblem
 
 Am 24. Februar 2026 wurde das Repo archiviert und auf `opkod-france/opkod-claude-code-plugins` weitergeleitet. Dieses Monorepo erlaubt Maintainern, mehrere Skills unter einem Dach zu verwalten.
 
-Das ist organisatorisch sinnvoll. Für Nutzer ist es ein Problem:
+Organisatorisch ist es sinnvoll. Für Nutzer ist es ein Problem.
 
-Wer heute das alte Repo findet, über einen Blog-Post, einen Reddit-Thread oder eine Kurs-Empfehlung, installiert einen archivierten Skill ohne aktive Wartung. Es gibt kein automatisches Update, keine Deprecation-Warnung im Skill selbst, keine Weiterleitung in der SKILL.md.
+Das alte Repo findet man heute über einen Blog-Post, einen Reddit-Thread oder eine Kurs-Empfehlung. Wer es installiert, bekommt einen archivierten Skill ohne aktive Wartung. Es gibt kein automatisches Update. Es gibt keine Deprecation-Warnung im Skill selbst. Auch die SKILL.md leitet nicht weiter.
 
-Das ist das fundamentale Wartungsproblem des Skill-Ökosystems: Skills werden nicht deinstalliert, sie verstauben still.
+Das ist das fundamentale Wartungsproblem des Skill-Ökosystems. Skills werden nicht deinstalliert. Sie verstauben still.
 
 ## Was das für Studierende bedeutet
 
-Drei Fragen die man stellen sollte, *bevor* man einen Skill installiert:
+Vor der Installation eines Skills sollte man drei Fragen stellen:
 
 1. Wann wurde das Repo zuletzt aktualisiert? Mehr als 3 Monate ohne Commit ist ein Warnsignal.
 2. Gibt es offene Issues ohne Antwort? Das zeigt ob der Maintainer noch aktiv ist.
@@ -66,6 +66,6 @@ Drei Fragen die man stellen sollte, *bevor* man einen Skill installiert:
 
 ## Fazit
 
-Der Skill hatte eine solide Grundlage und ein echtes Problem. Die Quelle war gut gewählt. Aber die Portierung war framework-gebunden ohne das zu kommunizieren, es gab keine Testfälle, und das Projekt ist nun archiviert. Für den Einsatz heute gibt es keinen triftigen Grund mehr.
+Der Skill hatte eine solide Grundlage und ein echtes Problem. Auch die Quelle war gut gewählt. Die Portierung war aber framework-gebunden und kommunizierte das nicht. Es gab keine Testfälle. Nun ist das Projekt archiviert. Für den Einsatz heute gibt es keinen triftigen Grund mehr.
 
-Wer Refactoring-UI-Prinzipien in Claude einbringen will, ist mit einem eigenen, gut dokumentierten CLAUDE.md-Abschnitt besser bedient als mit einem archivierten Skill eines unbekannten Drittanbieters.
+Wer Refactoring-UI-Prinzipien in Claude einbringen will, schreibt besser einen eigenen CLAUDE.md-Abschnitt. Er sollte gut dokumentiert sein. Ein archivierter Skill eines unbekannten Drittanbieters ist die schlechtere Wahl.

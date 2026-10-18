@@ -1,34 +1,34 @@
 ---
 layout: default
-title: Ueber diesen Blog
+title: Über diesen Blog
 permalink: /ueber/
 ---
 
 <div class="post-header">
   <div class="container">
     <span class="post-category">Kontext</span>
-    <h1 class="post-title">Ueber UX Skills Review</h1>
+    <h1 class="post-title">Über UX Skills Review</h1>
   </div>
 </div>
 
 <div class="post-content container" markdown="1">
 
-Das Skill-Oekosystem fuer Claude waechst schnell. Es entstehen Skills fuer Heuristic Evaluation, Cognitive Walkthroughs, A/B-Test-Analysen und Accessibility-Audits — viele davon von Einzelpersonen, ohne Peer-Review, ohne Testfaelle, ohne klare Aussage ueber Grenzen.
+Das Skill-Ökosystem für Claude wächst schnell. Es entstehen Skills für Heuristic Evaluation, Cognitive Walkthroughs, A/B-Test-Analysen und Accessibility-Audits. Viele stammen von Einzelpersonen. Peer-Review gibt es nicht, Testfälle selten, klare Aussagen über Grenzen fast nie.
 
-Das ist kein Vorwurf an die Maintainer. Es ist die natuerliche Dynamik eines fruehen Oekosystems.
+Das ist kein Vorwurf an die Maintainer. Ein junges Ökosystem verhält sich eben so.
 
 Dieser Blog hat zwei Ziele.
 
-Das erste Ziel ist, existierende Skills kritisch zu evaluieren — mit einem transparenten, reproduzierbaren Rahmen. Nicht um zu verurteilen, sondern um zu unterscheiden: Was ist ein genutzlich einsetzbares Werkzeug? Was ist Aesthetik-Praeferenz, die als Methodik verkleidet ist? Was fehlt noch?
+Das erste Ziel ist die kritische Evaluation existierender Skills. Der Rahmen dafür ist transparent und reproduzierbar. Ich will nicht verurteilen, sondern unterscheiden. Welcher Skill ist ein brauchbares Werkzeug? Welcher verkleidet eine Ästhetik-Präferenz als Methodik? Was fehlt noch? Ein Stern auf GitHub beantwortet keine dieser Fragen.
 
-Das zweite ist, die Luecken zu schliessen. Fuer jede evaluierte Methodik entsteht ein eigener Skill — mit SKILL.md, Python-Skripten zur Validierung, Referenzmaterialien und Beispielen. Jeder Skill kommuniziert explizit seine eigenen Grenzen.
+Das zweite Ziel ist, die Lücken zu schließen. Für jede evaluierte Methodik entsteht ein eigener Skill. Er bringt eine SKILL.md mit, dazu Python-Skripte zur Validierung, Referenzmaterial und Beispiele. Jeder Skill nennt seine Grenzen selbst.
 
-## Fuer wen
+## Für wen
 
-Primaer fuer Design-Studierende und Designer, die KI-Werkzeuge in ihre Praxis integrieren wollen — und dabei wissen muessen, wann sie einem Skill vertrauen koennen und wann nicht.
+Der Blog richtet sich an Design-Studierende und Designer, die KI-Werkzeuge in ihre Praxis holen. Sie müssen wissen, wann sie einem Skill vertrauen können. Genauso wichtig ist, wann nicht.
 
 ## Bewertungsrahmen
 
-Alle Skill-Evaluationen folgen dem [4-Dimensionen-Rahmen](/methodik/): methodische Fundierung, Transparenz der Grenzen, Validierbarkeit und Wartbarkeit.
+Alle Evaluationen folgen dem [4-Dimensionen-Rahmen](/methodik/). Die Dimensionen sind methodische Fundierung, Transparenz der Grenzen, Validierbarkeit und Wartbarkeit.
 
 </div>
